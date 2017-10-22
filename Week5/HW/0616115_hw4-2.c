@@ -13,15 +13,18 @@ int correspondence[3][4] = {{-1,-1,0,-1},{-1,5,6,1},{-1,4,3,2}};
 int main(void){
 	int numberToEnter;
 	int amountOfDigits= 0;
+	char str[100];
 
 	printf("Please enter the number you wish to display \n");
-	scanf("%d",&numberToEnter);
-	
+	scanf("%d %*s",&numberToEnter);
+	printf("Resulting inputed number : %d",numberToEnter);
 	int number = numberToEnter;
 	while(number != 0){
 		amountOfDigits++;
 		number /= 10;
 	}
+	if(amountOfDigits > MAX_DIGITS)
+		return 0;
 	int numberArray[amountOfDigits];
 	for(int i=0;i < amountOfDigits;i++){
 		numberArray[amountOfDigits-i-1] = numberToEnter % 10;
