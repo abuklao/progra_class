@@ -5,6 +5,7 @@
 #define MAX_DIGITS 10
 #define COLUMN_N 4
 #define ROW_N 3
+#define MAX_S_SIZE 100
 //BY LUIS GARCIA 
 //ALL MY CODE CAN BE FOUND AT GITHUB under the username "abuklao" repository "progra_class"
 //Thank you for your work :3
@@ -33,14 +34,14 @@ int correspondence[3][4] = {{-1,-1,0,-1},{-1,5,6,1},{-1,4,3,2}};
 int main(void){
 	//big str just in case
 	//ammount of digits is used to loop through the array of numbers
-	char str[100];
+	char str[MAX_S_SIZE];
 	int amountOfDigits = 0;
 	//aray of numbers
 	int numberArray[MAX_DIGITS];
 	
 	//asking for values
 	printf("Please enter your number : \n");
-	scanf("%s",str);
+	fgets(str,MAX_S_SIZE-1,stdin);
 	printf("This is your string %s \n", str);
 	
 	//we take the fiven string and take ONLY DIGIT values verything else is ignored
