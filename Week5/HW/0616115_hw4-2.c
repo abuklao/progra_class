@@ -5,7 +5,9 @@
 #define MAX_DIGITS 10
 #define COLUMN_N 4
 #define ROW_N 3
-
+//BY LUIS GARCIA 
+//ALL MY CODE CAN BE FOUND AT GITHUB under the username "abuklao" repository "progra_class"
+//Thank you for your work :3
 
 //functions prototypes
 //clean input string makes sure we only take numbers
