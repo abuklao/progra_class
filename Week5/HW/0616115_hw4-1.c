@@ -10,6 +10,8 @@
 /* poker.c (Chapter 10, page 233) */
 /* Classifies a poker hand */
 
+//IM JUST GONNA PUT THE COMMENT ON LINE ~140 OF THIS FILE
+
 #include <stdbool.h>   /* C99 only */
 #include <stdio.h>
 #include <stdlib.h>
@@ -135,7 +137,7 @@ void analyze_hand(void)
 	pairs = 0;
 
 	//check for royal flush 
-	for(suit = 0;suit < NUM_SUITS;suit++){
+	for(suit = 0;suit < NUM_SUITS;suit++){//we pretty much take the ideas from the loops below but just add an extra filter to find what the rank of the cards aree so we can say its a proper royal flush
 		if(num_in_suit[suit] == NUM_CARDS){
 			for(rank = 8;rank <= 12;rank++){
 				printf("Num amount = %d, we are in rank %d \n",num_in_rank[rank],rank); 
