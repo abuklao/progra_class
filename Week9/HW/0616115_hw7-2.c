@@ -1,7 +1,8 @@
 #include <stdio.h>
+#define MAX_L_SIZE 128
 
 //FUNCTION PROTOTYPES
-void readNums(int nums[][], char filename[]);
+int readNums(int nums[][3], char filename[]);
 int main(){
 	char filename[100];
 	int nums[10][3];
@@ -10,14 +11,47 @@ int main(){
 
 	readNums(nums, filename);
 
-	return 0;
-}
-int readNums(int nums[][], char filename[]){
-	
-	FILE *filo = fopen(filename,"r");
-	char charo = '\0';
-	while((charo = fgetc(filename)) != EOF){
+	for(int i = 0; i < 10;i++){
 		
+		printf("This are your numbers (%d)%d-%d \n",nums[i][0],nums[i][1],nums[i][2]);
+		printf("\n");
+	
 	}
 
+	return 0;
+}
+int readNums(int nums[][3], char filename[]){
+	
+	FILE *filo = fopen(filename,"r");
+	char p[MAX_L_SIZE];
+
+	while((fgets(p, MAX_L_SIZE,filo)) && r <= 10){
+		for(int i  = 0; i < strlen(p); i++){
+			if(isdigit(p[i])){
+				switch(charcount){
+					case(3):
+						
+						break;
+					case(6):
+
+						break;
+
+					case(10):
+
+						break;
+				}
+				charcount++;
+			}
+		}
+		charcount = 0;
+	}
+	fclose(filo);
+
+}
+unsigned concatenate(unsigned x, unsigned y){
+	unsigned power= 10;
+	while(y >= power)
+		power *=  10;
+	return x * power + y;
+	
 }
