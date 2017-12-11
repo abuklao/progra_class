@@ -24,11 +24,5 @@ void reduce(int numerator, int denominator,int * reduce_numerator, int * reduce_
 		if(numerator%i==0 && denominator%i ==0)
 			cmd = i;
 	}
-	//we change both values
-	numerator /= cmd;
-	denominator /= cmd;
-
-	*reduce_numerator  = numerator;
-	*reduce_denominator = denominator;
 	
 }

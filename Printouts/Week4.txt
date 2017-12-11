@@ -1,0 +1,166 @@
+#include <stdio.h>
+
+int main(int para){
+	int digitsEncounterd[10] = {10,10,10,10,10,10,10,10,10,10};
+	
+	int digitsEntered;
+	printf("Please enter your number : \n");
+	scanf("%d",&digitsEntered);
+	//if(para == 0){//backwards
+	//printf("TESTO");
+	while(digitsEntered > 0){
+	
+		int digit = digitsEntered % 10;
+		if(digitsEncounterd[digit] == digit){
+			printf("This number repeated : %d \n",digit);
+			break;
+		}else{
+		printf("%d\n",digit);
+		digitsEncounterd[digit] = digit;
+		}
+		digitsEntered /= 10;
+	//}	
+	}
+	if(digitsEntered == 0)
+		printf("No repeating numbers where found\n");
+
+	return 0;
+}
+#include <stdio.h>
+
+int main(void){
+	int arrayto[5][5],resultos[2][5];
+	//getting the numbers one by one
+	for(int i = 0;i < sizeof(arrayto)/sizeof(arrayto[0]);i++){
+		for(int s = 0;s<sizeof(arrayto[i])/sizeof(int);s++){
+			printf("Please Input The value for Row %d Column %d\n",i,s);
+			scanf("%d",&arrayto[i][s]);
+			resultos[0][i] += arrayto[i][s];
+			resultos[1][s] += arrayto[i][s];
+		}
+
+	}
+	//printing formated array
+	printf("This should be a representation of your matrix: \n");
+	for(int i = 0;i < sizeof(arrayto)/sizeof(arrayto[0]);i++){
+		for(int s = 0;s<sizeof(arrayto[i])/sizeof(int);s++){
+		printf(" %d ",arrayto[i][s]);
+		}
+		printf("\n");
+	}
+	//printing results
+	for(int i = 0;i<sizeof(resultos)/sizeof(resultos[0]);i++){
+
+		if(i ==0){
+		printf("Rows : ");
+		}else{
+		printf("Columns : ");
+		}
+		for(int s = 0; s < sizeof(resultos[i])/sizeof(int); s++){
+			printf("%3d",resultos[i][s]);
+		}
+		printf("\n");
+	}
+	//printf("Rows : %-3d %-3d %-3d %-3d %-3d \n", resultos[0][0],resultos[0][1],resultos[0][2],resultos[0][3],resultos[0][4]);
+	//printf("Columns %-3d %-3d %-3d %-3d %-3d \n", resultos[1][0],resultos[1][1],resultos[1][2],resultos[1][3],resultos[1][4]);
+	return 0;
+}
+#include <stdio.h>
+
+int main(void){
+
+	//in these few lines we set our arrays, "numbers is the amount of numbers you wish to entry
+	int numbers;
+	//ask for values
+	printf("How many numbers do you wish to compare \n");
+	scanf("%d",&numbers);
+	//we set the size of our array based on the amount of numbers our user wishes to compare
+	int numbArray[numbers];
+	
+	//we loop times the amount of numbers the users wishes to compare in order to get every value in the array
+	for(int i =0;i<numbers;++i){
+		printf("Please enter the number in position %d : \n",i);
+		scanf("%d",&numbArray[i]);
+	}
+	//wee do our bubble sort to get the values in order
+	for(int i = 0; i<numbers;i++){
+		for(int j = 0; j<(numbers-1);j++){
+			if(numbArray[j] > numbArray[j+1]){
+			int tempo = numbArray[j];
+			numbArray[j]= numbArray[j+1];
+			numbArray[j+1] = tempo;
+			}
+		}
+	}
+	//print the resulting organized array
+	printf("This are your numbers in ascending order \n");
+	for(int i = 0; i < numbers;i++){
+		printf("%d\n",numbArray[i]);
+	}
+	
+	return 0;
+}
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+#define M 27
+//fist index is just the ascii index of "a" that way we know where to start in an array
+#define firstIndex 97;
+int main(void){
+	
+	//char array that stores the words
+	char firstWord[16], secondWord[16];
+	//simply stores the words in a alphabetical order
+	int appearancesLedger[M] = {0};
+	
+	//asking for input
+	printf("Please enter your word \n");
+	scanf("%s", &firstWord);
+
+	printf("Please enter your second word \n");
+	scanf("%s",&secondWord);
+
+	//getting word length
+	int worldLength = strlen(firstWord);
+	//we test lengths of both words to be equal. if they are we treat wordLength not as the length of the first word but of both
+	if(worldLength == strlen(secondWord)){
+		//	int appearancesLedger[worldLength];
+		//memset(appearancesLedger,0,worldLength*sizeof(int));
+		//we store every letter taht appears in alphabetical orders and add 1 by every encounter of every letter
+		for(int i = 0; i < worldLength;i++){
+			int indexo = firstWord[i] - firstIndex;
+			appearancesLedger[indexo] += 1;
+			//debug
+			//printf("Resulting value at indexo %d - %d \n",indexo,appearancesLedger[indexo]);
+		
+		}
+		//we then do the opposite of what we did in the previous loop. we subctract 1 for every appearnce of every letter
+		for(int i = 0; i < worldLength;i++){
+			int indexo = secondWord[i] - firstIndex;
+			//debug
+			//printf("Goint through %d value : %d \n",indexo, appearancesLedger[indexo]);
+			//if we ever encounter 0 values in indexo then that means this letter was not previously seen before therefor not an anagram
+			if(appearancesLedger[indexo] == 0){
+				printf("This is not an anagram\n");
+				return 0;
+			}else{
+				appearancesLedger[indexo] -= 1;
+			}
+		}
+	
+	}else{
+	
+	printf("Not anagrams \n Words dont even match in length\n");
+	return 0;
+	}
+	//last check to see if its indeed an anagram
+	for(int i =0;i < sizeof(appearancesLedger)/sizeof(int);i++){
+		if(appearancesLedger[i] == 1){
+			printf("This is an anagram \n");
+			break;
+		}
+	}
+	printf("This is an anagram \n");
+	return 0;
+}

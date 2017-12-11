@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include <string.h>
+void reverse(char *message);
+int main(void){
+	char str[100];
+	int amount = 0;
+	char ch;
+
+	int indexo = 0;
+	char *p = &str[0];
+
+	//putting in array
+	printf("Please feed me that string \n");
+	while(1){
+		*(p+indexo) = getchar();
+		if(*(p+indexo) == '\n' || indexo == 100){
+			*(p+indexo) = '\0';
+			break;
+		}else{
+			//printf("This is it %i \n",str+indexo);
+			indexo++;
+		}
+	}
+
+	reverse(str);
+	printf("This is your reversed string : %s\n",str);
+
+
+}
+void reverse(char *message){
+	char *f,*l;
+	f = message;
+	l = message+(strlen(message)-1);
+
+	while(f <= l){
+		char tempo = *f;
+		*f = *l;
+		*l = tempo;
+
+		f++;
+		l--;
+	}
+}
+#include <stdio.h>
+char *dates[] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+int main(void){
+	int m,d,y;
+	printf("Please enter your date in the following format mm/dd/yyyy\n");
+	scanf("%d/%d/%d",&m,&d,&y);
+	printf("You entered the date %s %d, %d \n",*(dates + m - 1),d,y);
+}
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+int main(int argc,char *argv[]){
+	int total = 0;
+	char *ptr;
+	printf("This is your total\n");
+	//pretty simple
+	//we get the values form parameters
+	//we loop through the array
+	//and add them to the total
+	for(int i = 1;i< argc;i++){
+		total += strtol(argv[i],&ptr,10);
+	}
+	printf("Total : %d \n",total);
+}
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#define MAX_STR 100
+
+char points[][10] = {"AEILNORSTU","DG","BCMP","FHVWY","K","JX","QZ"};
+int main(void){
+	//basic variables for future use. we also ask for the user to enter his word
+	char str[MAX_STR];
+	int total_points = 0;
+	printf("Please enter your word\n");
+	//we will loop through the input and change charo to the respective character we loop through
+	char charo = '\0';	
+	//printf("letter e %c \n",points[0][1]);
+	//we loop until we find new line 
+	while((charo = getchar()) != '\n'){
+		//we change character to upper just in case
+		charo = toupper(charo);
+		//we loop through points and through every character and compare it to its position in the array
+		//once we determine this value(using the index) we add it to total_points
+		for(int i = 0; i < sizeof(points[0]);i++){
+			for(int j = 0;j < strlen(points[i]);j++){
+				if(charo == points[i][j]){
+					int valuetoadd = 0;
+					if(i == 5){
+						valuetoadd = 8;
+					}
+					else if(i== 6){
+						valuetoadd = 10;
+					}else{
+						valuetoadd = i+1;
+					}
+
+					total_points += valuetoadd;
+				}
+			}
+		}
+	}
+	printf("This is your word's value %d \n",total_points);
+
+}

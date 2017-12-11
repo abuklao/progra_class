@@ -1,0 +1,133 @@
+#include <stdio.h>
+void pay_amount(int dollars, int *twenties, int *tens,int *fives, int*ones);
+int main(void){
+	/* declaring variables
+	 * amount is for input
+	 * tw, te, fi, on is for the number of TWenty. TEn, FIve, ONe bills
+	 */
+	
+	int amount;
+	int tw,te,fi,on;
+	//printing request and asking for into
+	printf("Please enter your amount \n");
+	scanf("%d",&amount);
+	
+	pay_amount(amount,&tw,&te,&fi,&on);
+	printf("20 bills : %d \n"
+		"10 bills : %d \n"
+		"5 bills : %d \n"
+		"1 bills : %d \n", tw,te,fi,on);
+
+	return 0;
+}
+void pay_amount(int dollars, int *twenties, int *tens,int *fives, int *ones){
+	
+	
+	//we divide the amount given to find the amount of dollar bills
+	//we then subtract the remiainder to the total amount to continue with the lower amounts;
+	
+	*twenties = dollars / 20;
+	dollars -= *twenties* 20;
+	*tens = dollars / 10;
+	dollars -= *tens * 10;
+	*fives = dollars / 5;
+	dollars -= *fives * 5;
+	*ones = dollars;
+	
+
+}
+#include <stdio.h>
+
+int main(void){
+	char str[100];
+	int amount = 0;
+	char ch;
+
+	/*while((ch =getchar()) != '\n'){
+		str[amount] = ch;
+		amount++;
+	}*/
+	int indexo = 0;
+	char *p = &str[0];
+
+	//putting in array 
+	while(1){
+		*(p+indexo) = getchar();
+		if(*(p+indexo) == '\n' || indexo == 100){	
+			break;
+		}else{
+			printf("This is it %i \n",str+indexo);
+			indexo++;
+		}
+	}
+	//printing 
+	printf("This is your reverse");
+	for(p  =str+indexo; p >= str;p--){
+		printf("%c",*p);
+	}
+	printf("\n");
+
+
+
+}
+#include <stdio.h>
+void reduce(int numerator, int denominator,int * reduce_numerator, int * reduce_denominator);
+int main(void){
+	//we state our variables
+	int num1,num2,reduce_numerator,reduce_denominator;
+	
+	//we ask the values for the initial numerator and denominator
+	printf("Please enter both of your numbers : \n");
+	scanf("%d/%d",&num1,&num2);
+	//we run the function reduce
+	reduce(num1,num2,&reduce_numerator,&reduce_denominator);
+	
+	printf("This is your number : %d/%d\n",reduce_numerator,reduce_denominator);
+
+}
+
+void reduce(int numerator, int denominator,int * reduce_numerator, int * reduce_denominator){
+	//greatest common factor
+	int cmd;
+
+	for(int i =1; (i <= numerator) && (i <= denominator) ; ++i){
+		//we go up through numbers until we find one that can divide both numbers without remainders
+		//thus that would be our GCF
+		if(numerator%i==0 && denominator%i ==0)
+			cmd = i;
+	}
+	
+}
+#include <stdio.h>
+
+
+int main(void){
+	//setting up our variables
+	char str[100];
+	int amount = 0;
+	char ch;
+
+	int indexo = 0;
+	char *p = str;
+
+	//putting in array 
+	while(1){
+		*(p+indexo) = getchar();
+		if(*(p+indexo) == '\n' || indexo == 100){	
+			break;
+		}else{
+			//printf("This is it %i \n",str+indexo);
+			indexo++;
+		}
+	}
+	//printing 
+	printf("This is your reverse");
+	//we assign p as the last address of str, and we loop until we reach the intial address i.e. str
+	for(p = (str+indexo); p  >= str;p--){
+		printf("%c",*p);
+	}
+	printf("\n");
+
+
+
+}

@@ -1,0 +1,227 @@
+#include <stdio.h>
+
+int main(void){
+	
+	int dateOne[3],dateTwo[3]; 
+
+	printf("Enter first date (mm/dd/yy): \n");
+	scanf("%d/%d/%d",&dateOne[1],&dateOne[2],&dateOne[0]);
+	printf("This is your first date isnt it ? : %d/%d/%d \n\n",dateOne[1],dateOne[2],dateOne[0]);
+	printf("Please enter second date (mm/dd/yy): \n");
+	scanf("%d/%d/%d",&dateTwo[1],&dateTwo[2],&dateTwo[0]);
+	printf("This is your second date isnt it ? : %d/%d/%d \n\n",dateTwo[1],dateTwo[2],dateTwo[0]);
+
+	for(int i = 0; i < sizeof(dateOne)/sizeof(int); ++i){
+		if(dateOne[i] <  dateTwo[i]){
+			printf("%d/%d/%d Is earlier\n",dateOne[1],dateOne[2],dateOne[0]);
+			break;
+		}else if(dateTwo[i] < dateOne[i]){
+			printf("%d/%d/%d Is earlier\n",dateTwo[1],dateTwo[2],dateTwo[0]);
+			break;
+		}else if(dateOne[i] == dateTwo[i]){
+			if(i == 2){
+				printf("Dates are the same");
+			}
+		}
+	}
+	return 0;
+}
+#include <stdio.h>
+
+int main(){
+	int num,broken[2];
+	char *result,*result2 = " ";
+
+	printf("Please give me a two digit number : \n");
+	scanf("%d",&num);
+
+	if(num < 10 || num >= 100){
+		printf("Your number is either too low or high \n");
+
+	}else{
+		broken[0] = num/10;
+		broken[1] = num%10;
+
+
+		if(num >= 11 && num <= 19){
+			switch(num){
+				case 11:
+					result = "Eleven";
+					break;
+
+				case 12:
+					result = "Twelve";
+					break;
+
+				case 13:
+					result = "Thirteen";
+					break;
+
+				case 14:
+					result = "Fourteen";
+					break;
+
+				case 15:
+					result = "Fifteen";
+					break;
+				case 16:
+					result = "Sixteen";
+					break;
+				case 17:
+					result = "Seventeen";
+					break;
+				case 18:
+					result = "Eighteen";
+					break;
+
+				case 19:
+					result = "Nineteen";
+					break;
+			}
+
+		}
+		else{
+
+			switch(broken[0]){
+				case 1:
+					result = "Ten";
+					break;
+				case 2:
+					result = "Twenty";
+					break;
+				case 3:
+					result = "Thirty";
+					break;
+				case 4:
+					result = "Forty";
+					break;
+				case 5: 
+					result = "Fifty";
+					break;
+				case 6:
+					result = "Sixty";
+					break;
+				case 7:
+					result ="Seventy";
+					break;
+				case 8:
+					result = "Eighty";
+					break;
+				case 9:
+					result = "Ninety";
+					break;
+			}
+			switch(broken[1]){
+				case 1:
+					result2 = "One";
+					break;
+				case 2:
+					result2 = "Two";
+					break;
+				case 3:
+					result2 = "Three";
+					break;
+				case 4:
+					result2 = "Four";
+					break;
+				case 5:
+					result2 = "Five";
+					break;
+				case 6:
+					result2 = "Six";
+					break;
+				case 7:
+					result2 = "Seven";
+					break;
+				case 8:
+					result2 = "Eight";
+					break;
+				case 9:
+					result2 = "Nine";
+					break;
+			}
+			/*for(int i = 0; i < sizeof(broken)/sizeof(int);++i){
+			  switch (num){
+
+			  }
+			  }*/
+		}
+		if(broken[1] > 0 && broken[0] >= 2 ){
+		
+		printf("Your numer is %s-%s \n",result,result2);
+		}else{
+		printf("Your number is : %s \n", result);
+		}
+	}
+
+	return 0;
+}
+#include <stdio.h>
+
+int main(){
+	//initializing variable
+	int testo = 0;
+	while(1){//while loop so we can keep inputting numbers
+	//asking for a new number and storing it in testo;
+	printf("Please input your number :\n ");
+	scanf("%d",&testo);
+	
+	//we get the remainder
+	testo %= 2;
+	//if the remainder is 0 then the number is even otherwise it's odd
+	if(testo == 0){
+		printf("Even \n");
+	}else{
+		printf("Odd \n");
+	}
+	}
+	return 0;
+	
+}
+#include <stdio.h>
+
+int main(void){
+	//dateTwo and earlDate are the two date we are working with
+	//earldate will be the first date we input and consequently the on we will compare against dateTwo
+	//if dateTwo is earlier then earlDate then earlDate will adopt dateTwo's value and continue in the
+	//loop until otherwise instructed. 
+	//This are arrays so date[0] is year so we can compare it first, date[1] is month, and lastly date[2] is the day as it is the last thing we compare
+	int dateTwo[3],earlDate[3];
+
+	//Asking for values
+	printf("Please enter one date at a time (mm/dd/yy)\n");
+	scanf("%d/%d/%d",&earlDate[1],&earlDate[2],&earlDate[0]);
+	//this following printf was just debugging in case dates are not parsed correctly , uncomment when needed
+	//printf("This is your first date isnt it ? : %d/%d/%d \n\n",earlDate[1],earlDate[2],earlDate[0]);
+	
+	//while loop so we can keep entering dates and comparing
+	while(1){
+		//we ask for dateTwo which we will compare against earlDate on every loop
+		printf("Please enter following date (mm/dd/yy):0/0/0 will cancel the operation. \n");
+		scanf("%d/%d/%d",&dateTwo[1],&dateTwo[2],&dateTwo[0]);
+		//As instructed in the homework, if user inputs 0/0/0 then the date input is done and we output the earliest date
+		if(dateTwo[0] == 0 && dateTwo[1] == 0 && dateTwo[2] == 0){
+			printf("Cancelling operation ...");
+					break;
+		}else{
+		//This again, is only for debugging purposes so uncomment as needed
+		//printf("This is your second date isnt it ? : %d/%d/%d \n\n",dateTwo[1],dateTwo[2],dateTwo[0]);
+		}
+		//This for loop compares every single entry of the dates arrays in the following order :
+		//year or "date[0]" > month or "date[1]" > and finally day or "date[2]"
+		//if any of the components of dateTwo is earlier then earlDate then earlDate adopts such value and the loop breaks
+		for(int i = 0; i < sizeof(earlDate)/sizeof(int); ++i){
+			if(dateTwo[i] < earlDate[i]){
+				//printf("%d/%d/%d Is earlier\n",dateTwo[1],dateTwo[2],dateTwo[0]);
+				earlDate[0] = dateTwo[0];
+				earlDate[1] = dateTwo[1];
+				earlDate[2] = dateTwo[2];
+				break;
+			}
+		}
+	}
+	//here the loop broke and so did our inputting, so now we just print the date that the program determined as the earliest
+	printf("The earliest date is %d/%d/%d \n",earlDate[1],earlDate[2],earlDate[0]);
+	return 0;
+	//thank you ! :)
+}

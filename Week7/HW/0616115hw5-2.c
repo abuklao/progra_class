@@ -8,7 +8,7 @@ int main(void){
 	char ch;
 
 	int indexo = 0;
-	char *p = &str[0];
+	char *p = str;
 
 	//putting in array 
 	while(1){
