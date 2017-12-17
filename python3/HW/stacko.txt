@@ -1,0 +1,3092 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+
+    <head>
+
+        <title>How do I manually fire HTTP POST requests with Firefox or Chrome? - Stack Overflow</title>
+        <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+        <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+        <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome)"/>
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded" />
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:domain" content="stackoverflow.com"/>
+        <meta name="twitter:title" property="og:title" itemprop="title name" content="How do I manually fire HTTP POST requests with Firefox or Chrome?" />
+        <meta name="twitter:description" property="og:description" itemprop="description" content="I want to test some URLs on a web application I&#39;m working on. For that I would like to manually create HTTP POST requests (meaning I can add whatever parameters I like).
+
+Is there any extension or " />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.sstatic.net/Js/stub.en.js?v=b8445a3966bb"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/all.css?v=733fd40b244b">
+    
+            <meta name="twitter:app:country" content="US" />
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:iphone" content="871299723" />
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" />
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+            <meta name="twitter:app:id:ipad" content="871299723" />
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" />
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:7,shownCommentCount:5,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:4797534});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '4797534');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+        
+        
+        
+        
+             
+        
+        
+        
+            <script>
+                StackExchange.ready(function () {
+                    try {
+                        if (!document.createElementNS('http://www.w3.org/2000/svg', "svg").createSVGTransform)
+                            return;
+                    } catch (ex) {
+                        return;
+                    }
+                    var d = 100;
+                    $.ajax({url:"https://cdn-prom.sstatic.net/WinterBash/js/wb-core-incl.js?v=5",cache:true,dataType:"script"}).done(function tryInit() {
+                        if (window.WinterBash) {
+                            WinterBash.core.init('winterbash2017.stackexchange.com', 'https://cdn-prom.sstatic.net/WinterBash/', '6');
+                        } else {
+                            if (d <= 800)
+                                setTimeout(tryInit, d);
+                            d *= 2;
+                        }
+                    });
+                });
+            </script>
+                <script>
+        StackExchange.init({"locale":"en","serverTime":1513424774,"routeName":"Questions/Show","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"childUrl":"https://meta.stackoverflow.com","enableSocialMediaInSharePopup":true,"protocol":"https"},"user":{"fkey":"e25e5320ef34e46d4e74d149d7849bf1","tid":"f816133e-4c78-400f-2321-7459efe18a8a","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"canSeeNewHeaderDesign":true},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75,"likedTagsMaxLength":300,"dislikedTagsMaxLength":300},"jobPreferences":{"maxNumDeveloperRoles":2,"maxNumIndustries":4}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableImgurHttps":true,"forceHttpsImages":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"topBar":{"showNewFeatureNotice":true},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"97e603f21cfd","js/moderator.en.js":"b85ebba71ba7","js/full-anon.en.js":"eb20604208a8","js/full.en.js":"5f0a9209d1b1","js/wmd.en.js":"41c4379e4448","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"4e9a0c0ced4b","js/help.en.js":"118cb359bcc6","js/tageditor.en.js":"4f83add90c55","js/tageditornew.en.js":"c65ec12a2dd4","js/inline-tag-editing.en.js":"e7aa31e8eba1","js/revisions.en.js":"8f22ba768cac","js/review.en.js":"fea472155054","js/tagsuggestions.en.js":"ddb0e41afe26","js/post-validation.en.js":"25f1ec1a2af5","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"ec3a5dc4bf96","js/keyboard-shortcuts.en.js":"a09220d00ebc","js/external-editor.en.js":"3e5baf662544","js/adops.en.js":"9a6a7812a212","js/external-editor.en.js":"3e5baf662544","js/snippet-javascript.en.js":"a73dc08b2b76","js/snippet-javascript-codemirror.en.js":"36391ed3b5f3"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    <noscript id="noscript-css"><style>body,.top-bar{margin-top:1.9em}</style></noscript>
+    </head>
+    <body class="question-page new-topbar">
+        <script async src="https://js-sec.indexww.com/ht/p/185901-159836282584097.js"></script>
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+<header class="top-bar js-top-bar _fixed">
+    <div class="-container">
+        <div class="-main">
+            
+                <a href="https://stackoverflow.com" class="-logo js-gps-track"
+                   data-gps-track="top_nav.click({is_current:false, location:2, destination:8})">
+                   <span class="-img">Stack Overflow</span>
+                </a>
+
+
+                <nav class="navigation" role="navigation" aria-label="site navigation">
+                    <ol class="-list">
+    <li class="-item _current">
+        <a id="nav-questions" href="/questions" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:true, location:2, destination:1})">Questions</a>
+    </li>
+    <li class="-item">
+        <a id="nav-jobs" href="/jobs?med=site-ui&amp;ref=jobs-tab" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:false, location:2, destination:6})">Developer Jobs</a>
+    </li>
+    <li class="-item">
+        <a id="nav-tags" href="/tags" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:false, location:2, destination:2})">Tags</a>
+    </li>
+    <li class="-item">
+        <a id="nav-users" href="/users" class="-link js-gps-track" 
+            data-gps-track="top_nav.click({is_current:false, location:2, destination:3})">Users</a>
+    </li>
+                    </ol>
+                </nav>
+
+        </div>
+        
+            <form id="search" action="/search" method="get" class="searchbar" autocomplete="off" role="search">
+                <input name="q" type="text" placeholder="Search…" value="" tabindex="1" autocomplete="off" maxlength="240" class="f-input js-search-field" />
+                <button type="submit" aria-label="Search..." class="btn-topbar-primary js-search-submit"><svg aria-hidden="true" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="M12.86 11.32L18 16.5 16.5 18l-5.18-5.14v-.35a7 7 0 1 1 1.19-1.19h.35zM7 12A5 5 0 1 0 7 2a5 5 0 0 0 0 10z"/></svg></button>
+            </form>
+
+        
+
+
+    
+
+<div class="-actions">
+    <nav class="secondary-nav">
+        <div class="-dialog-container js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="https://stackoverflow.com">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+            <a href="https://stackoverflow.com/help" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:14 })"
+>help</a>
+                    <a href="https://chat.stackoverflow.com" class="js-gps-track"     data-gps-track="site_switcher.click({ item_type:6 })"
+>chat</a>
+            </div>
+    <a href="https://stackoverflow.com"
+       class="current-site-link site-link js-gps-track"
+       data-id="1"
+       data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="favicon favicon-stackoverflow site-icon" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                            <a href="https://meta.stackoverflow.com"
+       class="site-link js-gps-track"
+       data-id="552"
+       data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:4 })">
+        <div class="favicon favicon-stackoverflowmeta site-icon" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:10 })"
+>Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f4797534%2fhow-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" class="login-link js-gps-track"     data-gps-track="site_switcher.click({ item_type:11 })"
+>log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="https://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="https://stackoverflow.blog" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+                <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="https://meta.stackoverflow.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+        <ol class="-list">
+    <li class="-item">
+        <a href="#" class="-link js-inbox-button" title="Recent inbox messages">
+            <svg aria-hidden="true" class="svg-icon iconInbox" width="20" height="18" viewBox="0 0 20 18"><path d="M15.19 1H4.63c-.85 0-1.6.54-1.85 1.35L0 10.79V15c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2v-4.21l-2.87-8.44A2 2 0 0 0 15.19 1zm-.28 10l-2 2h-6l-2-2H1.96L4.4 3.68A1 1 0 0 1 5.35 3h9.12a1 1 0 0 1 .95.68L17.86 11h-2.95z"/></svg>
+            <span class="indicator-badge js-unread-count _important" style="display: none;"></span>
+        </a>
+    </li>
+    <li class="-item">
+        <a href="#" class="-link js-achievements-button" title="Recent achievements: reputation, badges, and privileges earned" data-unread-class="_highlighted-positive">
+            <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18" viewBox="0 0 18 18"><path d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3zM3 7c-.5 0-1-.5-1-1V4h1v3zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1zM16 6c0 .5-.5 1-1 1V4h1v2z"/></svg>
+            <span class="indicator-badge js-unread-count _positive" style="display: none;"></span>
+        </a>
+    </li>
+
+    <li class="-item"><a href="#" class="-link js-help-button" title="Help Center and other resources">
+        <svg aria-hidden="true" class="svg-icon iconHelp" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1a8 8 0 1 0 0 16A8 8 0 0 0 9 1zm.81 12.13c-.02.71-.55 1.15-1.24 1.13-.66-.02-1.17-.49-1.15-1.2.02-.72.56-1.18 1.22-1.16.7.03 1.2.51 1.17 1.23zM11.77 8a5.8 5.8 0 0 1-1.02.91l-.53.37c-.26.2-.42.43-.5.69a4 4 0 0 0-.09.75c0 .05-.03.16-.18.16H7.88c-.16 0-.18-.1-.18-.15.03-.66.12-1.21.4-1.66a5.29 5.29 0 0 1 1.43-1.22c.16-.12.28-.25.38-.39a1.34 1.34 0 0 0 .02-1.71c-.24-.31-.51-.46-1.03-.46-.51 0-.8.26-1.02.6-.21.33-.18.73-.18 1.1H5.75c0-1.38.35-2.25 1.1-2.76.52-.35 1.17-.5 1.93-.5 1 0 1.79.18 2.49.71.64.5.98 1.18.98 2.12 0 .57-.2 1.05-.48 1.44z"/></svg>
+    </a></li>
+
+                <li class="-item">
+        <a href="https://stackexchange.com" class="-link js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 170 Stack Exchange sites">
+            <svg aria-hidden="true" class="svg-icon iconStackExchange" width="18" height="18" viewBox="0 0 18 18"><path d="M1 13c0 1.1.9 2 2 2h8v3l3-3h1a2 2 0 0 0 2-2v-2H1v2zM15 1H3a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2zM1 6h16v4H1V6z"/></svg>
+        </a>
+    </li>
+
+        </ol>
+    </nav>
+        <div class="-ctas">
+                <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f4797534%2fhow-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" class="login-link btn-clear" rel="nofollow">Log In</a>
+                    <a href="https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link btn-topbar-primary" rel="nofollow">Sign Up</a>
+
+        </div>
+</div>
+    </div>
+</header>
+
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+        StackExchange.scrollPadding.setPaddingTop(60, 10);     </script>
+
+
+
+    <div class="container _full ">
+        
+
+
+        <div id="content" class="snippet-hidden">
+
+
+            
+
+<div itemscope itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+
+
+
+
+<div class="s-hero hero-container _fixed js-dismissable-hero" data-campaign-name="stk">
+    <div class="-container g-row jc-sp-between ai-center">
+        <div class="g-col6">
+            <p class="-title"><strong>Join Stack Overflow</strong> to learn, share knowledge, and build your career.</p>
+        </div>
+
+        <div class="s-signup _hero g-col6">
+            <div id="openid-buttons" class="-social">
+                <a class="btn-outlined -white _medium _block" href="/users/signup?ssrc=hero&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f4797534%2fhow-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" rel="nofollow">Email Sign Up</a>
+                <span class="-or">or sign in with</span>
+                    <div class="major-provider btn _block _medium _google" data-provider='google' data-oauthserver='https://accounts.google.com/o/oauth2/auth' data-oauthversion='2.0'>
+<svg aria-hidden="true" class="svg-icon native iconGoogle" width="18" height="18" viewBox="0 0 18 18"><g><path d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z" fill="#4285F4"/><path d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z" fill="#34A853"/><path d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z" fill="#FBBC05"/><path d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z" fill="#EA4335"/></g></svg>                                                Google
+                    </div>
+                    <div class="major-provider btn _block _medium _facebook" data-provider='facebook' data-oauthserver='https://www.facebook.com/v2.0/dialog/oauth' data-oauthversion='2.0'>
+                        <svg aria-hidden="true" class="svg-icon iconFacebook" width="18" height="18" viewBox="0 0 18 18"><path d="M1.88 1C1.4 1 1 1.4 1 1.88v14.24c0 .48.4.88.88.88h7.67v-6.2H7.46V8.4h2.09V6.61c0-2.07 1.26-3.2 3.1-3.2.88 0 1.64.07 1.87.1v2.16h-1.29c-1 0-1.19.48-1.19 1.18V8.4h2.39l-.31 2.42h-2.08V17h4.08c.48 0 .88-.4.88-.88V1.88c0-.48-.4-.88-.88-.88H1.88z" fill="#3C5A96"/></svg>                        Facebook
+                    </div>
+                                    <a id="close" href="#" class="js-dismiss js-hero-mini-disabled -dismiss" title="dismiss"><svg aria-hidden="true" class="svg-icon iconClear" width="18" height="18" viewBox="0 0 18 18"><path d="M15 4.41L13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9z"/></svg></a>
+            </div>
+
+            <form id="login-form" action="/users/signup?ssrc=hero&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f4797534%2fhow-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" method="POST">
+
+                <input type="hidden" name="fkey" value="e25e5320ef34e46d4e74d149d7849bf1">
+
+                <input type="hidden" name="ssrc" value="" />
+
+                <input type="hidden" id="oauth_version" name="oauth_version" />
+                <input type="hidden" id="oauth_server" name="oauth_server" />
+
+                <div id="se-login-fields">
+                    <input type="hidden" name="legalLinksShown" value="0" />
+                </div>
+            </form>
+            <script>
+                StackExchange.ready(function () {
+                    StackExchange.InlineAuth.init();
+                })
+            </script>
+        </div>
+    </div>
+</div><script>
+    StackExchange.ready(function () {
+
+        StackExchange.Hero.init("stk", "a");
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+
+        $('.js-dismissable-hero #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+              });
+
+            StackExchange.Hero.dismiss();
+
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $(".js-dismissable-hero").fadeOut("fast", function () {
+                        $(".js-dismissable-hero").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+</script>    <div class="inner-content">
+            <div id="question-header">
+                <h1 itemprop="name"><a href="/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" class="question-hyperlink">How do I manually fire HTTP POST requests with Firefox or Chrome? [closed]</a></h1>
+
+            
+<div class="aside-cta" role="navigation" aria-label="ask new question">
+        <a href="/questions/ask" class="btn-outlined">Ask Question</a>
+
+</div>
+
+        </div>
+            <div id="mainbar" role="main" aria-label="question and answers">
+
+            
+
+<div class="question" data-questionid="4797534"  id="question">
+
+    <div id="clc-tlb" class="everyonelovesstackoverflow"></div>    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4797534">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">649</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#">favorite</a>
+        <div class="favoritecount"><b>151</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I want to test some URLs on a web application I'm working on. For that I would like to manually create HTTP POST requests (meaning I can add whatever parameters I like).</p>
+
+<p>Is there any extension or functionality in Chrome and/or Firefox that I'm missing?</p>
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/firefox" class="post-tag" title="show questions tagged &#39;firefox&#39;" rel="tag">firefox</a> <a href="/questions/tagged/google-chrome" class="post-tag" title="show questions tagged &#39;google-chrome&#39;" rel="tag"><img src="//i.stack.imgur.com/EdUwb.png" height="16" width="18" alt="" class="sponsor-tag-img">google-chrome</a> <a href="/questions/tagged/http-post" class="post-tag" title="show questions tagged &#39;http-post&#39;" rel="tag">http-post</a> 
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/q/4797534" title="short permalink to this question" class="short-link" id="link-post-4797534">share</a><span class="lsep">|</span><a href="/posts/4797534/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/4797534/revisions" title="show all edits to this post">edited <span title="2016-01-29 09:52:08Z" class="relativetime">Jan 29 '16 at 9:52</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/4669891/spaceman"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/0fd9fa7feed128f6097aed0073da6afd?s=32&amp;d=identicon&amp;r=PG&amp;f=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/4669891/spaceman">spaceman</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">400</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="17 bronze badges"><span class="badge3"></span><span class="badgecount">17</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info user-hover">
+    <div class="user-action-time">
+        asked <span title="2011-01-25 18:45:15Z" class="relativetime">Jan 25 '11 at 18:45</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/351723/pascal-klein"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/idHwX.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/351723/pascal-klein">Pascal Klein</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">6,811</span><span title="17 gold badges"><span class="badge1"></span><span class="badgecount">17</span></span><span title="69 silver badges"><span class="badge2"></span><span class="badgecount">69</span></span><span title="111 bronze badges"><span class="badge3"></span><span class="badgecount">111</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</div>
+</td>
+        </tr>
+                    <tr>
+            <td class="special-status" colspan="2">
+                <div class="question-status">
+        <h2>                    <b>closed</b> as off-topic by <a href="/users/100297/martijn-pieters">Martijn Pieters</a><span class="mod-flair" title="moderator">&#9830;</span> <span dir="ltr"><span title="2015-09-28 13:19:16Z" class="relativetime">Sep 28 '15 at 13:19</span></span>
+</h2>
+        <p>This question appears to be off-topic. The users who voted to close gave this specific reason:<ul class="close-as-off-topic-status-list"><li>&quot;Questions asking us to <b>recommend or find a book, tool, software library, tutorial or other off-site resource</b> are off-topic for Stack Overflow as they tend to attract opinionated answers and spam. Instead, <a href="https://meta.stackoverflow.com/questions/254393">describe the problem</a> and what has been done so far to solve it.&quot; &ndash; Martijn Pieters</li></ul> <span class="close-status-suffix">If this question can be reworded to fit the rules in the <a href="/help/closed-questions">help center</a>, please <a href="/posts/4797534/edit">edit the question</a>.</span></p>
+    </div>
+            </td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4797534" class="comments js-comments-container ">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="2"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+
+
+    <tr id="comment-65120807" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">DHC by Restlet (available on Chrome Webstore) is pretty useful too.</span>
+                    &ndash;&nbsp;<a href="/users/3286583/devesh-khandelwal"
+                       title="208 reputation"
+                       class="comment-user">Devesh Khandelwal</a>
+                <span class="comment-date" dir="ltr"><span title="2016-08-10 17:25:13Z" class="relativetime-clean">Aug 10 '16 at 17:25</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-72744118" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Make an AJAX call in the Chrome console. No extension needed. This is a good way to make POST requests without the need to grab authentication cookies. <code>$.post(&#39;&#47;resource&#47;path&#47;&#39;)</code></span>
+                    &ndash;&nbsp;<a href="/users/2482605/fearlessfuture"
+                       title="882 reputation"
+                       class="comment-user">FearlessFuture</a>
+                <span class="comment-date" dir="ltr"><span title="2017-03-15 16:51:04Z" class="relativetime-clean">Mar 15 at 16:51</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-76155144" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Whilst an add on is necessary, the close is niitpicking nonsense. He was asking for functionality in chrome or firefox , or iif it needs a plugin. That it might require a specifed or unspecified plugin is not the point</span>
+                    &ndash;&nbsp;<a href="/users/1158644/shayne"
+                       title="1,131 reputation"
+                       class="comment-user">Shayne</a>
+                <span class="comment-date" dir="ltr"><span title="2017-06-16 07:48:04Z" class="relativetime-clean">Jun 16 at 7:48</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-76542370" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Nitpicking nonsense sums up SO moderation in its entirety these days.</span>
+                    &ndash;&nbsp;<a href="/users/954927/neutrino"
+                       title="2,576 reputation"
+                       class="comment-user">Neutrino</a>
+                <span class="comment-date" dir="ltr"><span title="2017-06-27 12:58:53Z" class="relativetime-clean">Jun 27 at 12:58</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-77236484" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><a href="https://insomnia.rest" rel="nofollow noreferrer">insomnia.rest</a> is a dedicated API testing client you may find helpful.</span>
+                    &ndash;&nbsp;<a href="/users/1459669/no%c9%a5%ca%87%ca%8e%d4%80%ca%8ez%c9%90%c9%b9%c6%86"
+                       title="1,927 reputation"
+                       class="comment-user">noɥʇʎԀʎzɐɹƆ</a>
+                <span class="comment-date" dir="ltr"><span title="2017-07-16 21:45:16Z" class="relativetime-clean">Jul 16 at 21:45</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-4797534" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>2</b> more comments</a>
+        </div>         
+    </td>
+</tr>        </table>
+</div>
+
+            <div id="answers">
+
+                <a name="tab-top"></a>
+                <div id="answers-header">
+                    <div class="subheader answers-subheader">
+                        <h2 data-answercount="12">
+                                12 Answers
+                                <span style="display:none;" itemprop="answerCount">12</span>
+                        </h2>
+                        <div>
+                            <div id="tabs">
+        <a href="/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere " href="/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+  
+<a name="9716192"></a>
+<div id="answer-9716192" class="answer accepted-answer" data-answerid="9716192"  itemscope itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="9716192">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post high-scored-post">1150</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I have been making a Chrome app called <a href="https://chrome.google.com/webstore/detail/fhbjgbiflinjbdggehcddcbncdddomop" rel="noreferrer">Postman</a> for this type of stuff. All the other extensions seemed a bit dated so made my own. It also has a bunch of other features which have been helpful for documenting our own API here.</p>
+
+<hr>
+
+<p>Postman now also has <a href="https://www.getpostman.com/" rel="noreferrer"><em>native apps</em></a> (i.e. standalone) for Windows, Mac and Linux! It is more preferable now to use native apps, read more <a href="https://www.getpostman.com/docs/why_native" rel="noreferrer">here</a>.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/9716192" title="short permalink to this answer" class="short-link" id="link-post-9716192">share</a><span class="lsep">|</span><a href="/posts/9716192/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/9716192/revisions" title="show all edits to this post">edited <span title="2017-07-04 06:39:19Z" class="relativetime">Jul 4 at 6:39</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/3980929/rakete1111"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/xyKrD.png?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/3980929/rakete1111">Rakete1111</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 23,498" dir="ltr">23.5k</span><span title="9 gold badges"><span class="badge1"></span><span class="badgecount">9</span></span><span title="47 silver badges"><span class="badge2"></span><span class="badgecount">47</span></span><span title="77 bronze badges"><span class="badge3"></span><span class="badgecount">77</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2012-03-15 08:32:18Z" class="relativetime">Mar 15 '12 at 8:32</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/48066/abhinav"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/038106c509428014f4312ff180438f77?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/48066/abhinav">Abhinav</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 20,624" dir="ltr">20.6k</span><span title="8 gold badges"><span class="badge1"></span><span class="badgecount">8</span></span><span title="33 silver badges"><span class="badge2"></span><span class="badgecount">33</span></span><span title="46 bronze badges"><span class="badge3"></span><span class="badgecount">46</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-9716192" class="comments js-comments-container ">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="6"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+
+
+    <tr id="comment-58258237" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The Mac app is out. It&#39;s based on Electron, so we&#39;ll have Windows and Linux too. We have hit the limits of what Postman can do with a browser.</span>
+                    &ndash;&nbsp;<a href="/users/48066/abhinav"
+                       title="20,624 reputation"
+                       class="comment-user">Abhinav</a>
+                <span class="comment-date" dir="ltr"><span title="2016-02-08 15:34:04Z" class="relativetime-clean">Feb 8 '16 at 15:34</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-68256369" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">When using POST in Postman add your keys and values to the Body once x-www-form-urlencoded is selected. @Abhivav I just want to say thank you for the awesome application. Works really well when testing RESTful.</span>
+                    &ndash;&nbsp;<a href="/users/4247211/david"
+                       title="70 reputation"
+                       class="comment-user">David</a>
+                <span class="comment-date" dir="ltr"><span title="2016-11-09 12:31:53Z" class="relativetime-clean">Nov 9 '16 at 12:31</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-69177258" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">8</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">wow - so this is where it all stated for postman :P Nice job Abhinav (y)</span>
+                    &ndash;&nbsp;<a href="/users/2385468/santanu"
+                       title="123 reputation"
+                       class="comment-user">Santanu</a>
+                <span class="comment-date" dir="ltr"><span title="2016-12-05 21:40:20Z" class="relativetime-clean">Dec 5 '16 at 21:40</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-70725154" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="hot">20</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Abhinav, this 5 year old post has to be legend now, especially after &quot;Postman&quot; is highly successful now and a life saver for us Developers. Congratulations on your success.</span>
+                    &ndash;&nbsp;<a href="/users/3649492/dilnoor-singh"
+                       title="106 reputation"
+                       class="comment-user">Dilnoor Singh</a>
+                <span class="comment-date" dir="ltr"><span title="2017-01-20 15:18:51Z" class="relativetime-clean">Jan 20 at 15:18</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-73113377" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">5</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Thank you @DilnoorSingh. Indeed feels great and it&#39;s been amazing having the support from the dev community.</span>
+                    &ndash;&nbsp;<a href="/users/48066/abhinav"
+                       title="20,624 reputation"
+                       class="comment-user">Abhinav</a>
+                <span class="comment-date" dir="ltr"><span title="2017-03-25 02:39:35Z" class="relativetime-clean">Mar 25 at 2:39</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-9716192" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>6</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+<div id="clc-mlb" class="everyonelovesstackoverflow"></div>
+  
+<a name="16870452"></a>
+<div id="answer-16870452" class="answer" data-answerid="16870452"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="16870452">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">134</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>CURL is AWESOME to do what you want ! It's a simple but effective command line tool : <a href="https://curl.haxx.se/" rel="noreferrer">https://curl.haxx.se/</a></p>
+
+<p>Rest implementation test commands : </p>
+
+<pre><code>curl -i -X GET http://rest-api.io/items
+curl -i -X GET http://rest-api.io/items/5069b47aa892630aae059584
+curl -i -X DELETE http://rest-api.io/items/5069b47aa892630aae059584
+curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "New item", "year": "2009"}' http://rest-api.io/items
+curl -i -X PUT -H 'Content-Type: application/json' -d '{"name": "Updated item", "year": "2010"}' http://rest-api.io/items/5069b47aa892630aae059584
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/16870452" title="short permalink to this answer" class="short-link" id="link-post-16870452">share</a><span class="lsep">|</span><a href="/posts/16870452/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/16870452/revisions" title="show all edits to this post">edited <span title="2017-01-22 23:35:46Z" class="relativetime">Jan 22 at 23:35</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/93747/daniel-stenberg"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/dbf187b5b45c400649ed7f946e8f00d6?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/93747/daniel-stenberg">Daniel Stenberg</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 25,019" dir="ltr">25k</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="53 silver badges"><span class="badge2"></span><span class="badgecount">53</span></span><span title="105 bronze badges"><span class="badge3"></span><span class="badgecount">105</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2013-06-01 07:54:42Z" class="relativetime">Jun 1 '13 at 7:54</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/750725/arno-2501"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/f6f1474acd728e319fbdadc940afec2e?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/750725/arno-2501">Arno 2501</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">3,477</span><span title="6 gold badges"><span class="badge1"></span><span class="badgecount">6</span></span><span title="25 silver badges"><span class="badge2"></span><span class="badgecount">25</span></span><span title="45 bronze badges"><span class="badge3"></span><span class="badgecount">45</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-16870452" class="comments js-comments-container ">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+
+
+    <tr id="comment-43280576" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">11</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It&#39;s a simple and effective <b>but</b> command line tool. The last three words hint the definitions you had used for the adjectives &quot;simple&quot; and &quot;effective&quot;.</span>
+                    &ndash;&nbsp;<a href="/users/632951/pacerier"
+                       title="37,356 reputation"
+                       class="comment-user">Pacerier</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-11 08:54:03Z" class="relativetime-clean">Dec 11 '14 at 8:54</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-57067653" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="warm">5</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I&#39;m upvoting this even though it&#39;s a wrong answer to the question: it&#39;s what I needed to know instead.</span>
+                    &ndash;&nbsp;<a href="/users/1623645/jim-pivarski"
+                       title="2,078 reputation"
+                       class="comment-user">Jim Pivarski</a>
+                <span class="comment-date" dir="ltr"><span title="2016-01-07 17:11:29Z" class="relativetime-clean">Jan 7 '16 at 17:11</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-61255990" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It doesn&#39;t fit the whole purpose, because it cannot attach cookies already set in a browser. For example, you might want to log in to a website manually, and then send a post request. With curl, this would be a huge pain if the login process is handled with javascript stuff</span>
+                    &ndash;&nbsp;<a href="/users/2873507/vic-seedoubleyew"
+                       title="3,704 reputation"
+                       class="comment-user">Vic Seedoubleyew</a>
+                <span class="comment-date" dir="ltr"><span title="2016-04-25 14:18:29Z" class="relativetime-clean">Apr 25 '16 at 14:18</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-16870452" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="9213977"></a>
+<div id="answer-9213977" class="answer" data-answerid="9213977"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="9213977">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">116</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Forget browser and try CLI. <a href="https://httpie.org/" rel="nofollow noreferrer">HTTPie</a> is great tool!</p>
+
+<p><a href="https://i.stack.imgur.com/1VjEt.png" rel="nofollow noreferrer"><img src="https://i.stack.imgur.com/1VjEt.png" alt="enter image description here"></a></p>
+
+<p><strong>CLI</strong> http clients:</p>
+
+<ul>
+<li><a href="https://httpie.org/" rel="nofollow noreferrer">HTTPie</a></li>
+<li><a href="http://http-prompt.com/" rel="nofollow noreferrer">HTTP Prompt</a></li>
+<li><a href="https://curl.haxx.se/docs/httpscripting.html" rel="nofollow noreferrer">Curl</a></li>
+<li>wget</li>
+</ul>
+
+<p>If you insist on browser extension then:</p>
+
+<p><strong>Chrome</strong>:</p>
+
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" rel="nofollow noreferrer">Postman - REST Client</a> (best browser client)</li>
+<li><a href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo" rel="nofollow noreferrer">Advanced REST client</a></li>
+</ul>
+
+<p><strong>Firefox</strong>:</p>
+
+<ul>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/rest-easy/" rel="nofollow noreferrer">REST Easy</a> (has nice design)</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/restclient/" rel="nofollow noreferrer">RESTClient</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/poster/" rel="nofollow noreferrer">Poster plugin</a></li>
+</ul>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/9213977" title="short permalink to this answer" class="short-link" id="link-post-9213977">share</a><span class="lsep">|</span><a href="/posts/9213977/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/9213977/revisions" title="show all edits to this post">edited <span title="2017-11-20 11:21:32Z" class="relativetime">Nov 20 at 11:21</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2012-02-09 15:43:31Z" class="relativetime">Feb 9 '12 at 15:43</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/304285/amra"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/1b9e2173c30245116eec04cd507afb91?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/304285/amra">amra</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">9,421</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="38 silver badges"><span class="badge2"></span><span class="badgecount">38</span></span><span title="41 bronze badges"><span class="badge3"></span><span class="badgecount">41</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-9213977" class="comments js-comments-container ">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="1"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+
+
+    <tr id="comment-27124891" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">also resource test addon <a href="https://addons.mozilla.org/en-us/firefox/addon/http-resource-test/" rel="nofollow noreferrer">addons.mozilla.org/en-us/firefox/addon/http-resource-test</a></span>
+                    &ndash;&nbsp;<a href="/users/520567/akostadinov"
+                       title="9,887 reputation"
+                       class="comment-user">akostadinov</a>
+                <span class="comment-date" dir="ltr"><span title="2013-08-27 04:58:31Z" class="relativetime-clean">Aug 27 '13 at 4:58</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-39850375" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Poster last updated 28/06/11 - updates to Firefox means there&#39;s no way to launch it</span>
+                    &ndash;&nbsp;<a href="/users/36214/richard"
+                       title="11,849 reputation"
+                       class="comment-user">Richard</a>
+                <span class="comment-date" dir="ltr"><span title="2014-08-27 11:17:30Z" class="relativetime-clean">Aug 27 '14 at 11:17</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-40549200" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@akostadinov i am unable to use resource test addon in mozilla the tool does not appear (even after installaion and restart) to me under developer tools in the lastest version of firefox.</span>
+                    &ndash;&nbsp;<a href="/users/193061/ram"
+                       title="221 reputation"
+                       class="comment-user">Ram</a>
+                <span class="comment-date" dir="ltr"><span title="2014-09-18 07:23:02Z" class="relativetime-clean">Sep 18 '14 at 7:23</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-50619278" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Just tried REST Easy. Uninstalled on the spot: the interface does way too much hand-holding and forces the user into rigid use cases. Not good for API development.</span>
+                    &ndash;&nbsp;<a href="/users/1881810/7heo-tk"
+                       title="753 reputation"
+                       class="comment-user">7heo.tk</a>
+                <span class="comment-date" dir="ltr"><span title="2015-07-09 11:20:03Z" class="relativetime-clean">Jul 9 '15 at 11:20</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-53583922" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Tried all suggested above for Firefox but found nothing as handy as <i>Postman for Chrome</i>. <i>REST Easy</i>, by the way, doesn&#39;t handle empty responses.</span>
+                    &ndash;&nbsp;<a href="/users/355438/lu55"
+                       title="9,871 reputation"
+                       class="comment-user">Lu55</a>
+                <span class="comment-date" dir="ltr"><span title="2015-09-30 21:57:44Z" class="relativetime-clean">Sep 30 '15 at 21:57</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-9213977" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>1</b> more comment</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="26848256"></a>
+<div id="answer-26848256" class="answer" data-answerid="26848256"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="26848256">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">66</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p><strong>Firefox</strong></p>
+
+<p>Open Network panel in Developer Tools by pressing <kbd>Ctrl-Shift-Q</kbd> or by going Firefox -> Developer Tools -> Network Tab (highlighted). Then Click on small door icon on top-right (in expanded form in the screenshot, you'll find it just left of the highlighted Headers), second row (if you don't see it then reload the page) -> Edit and resend whatever request you want</p>
+
+<p>EDIT: Added image. Unfortunately I'm on Linux so no simple tool to circle stuff around, but hopefully the highlights would make things clear. <img src="https://i.stack.imgur.com/uBSql.png" alt="enter image description here">. </p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/26848256" title="short permalink to this answer" class="short-link" id="link-post-26848256">share</a><span class="lsep">|</span><a href="/posts/26848256/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/26848256/revisions" title="show all edits to this post">edited <span title="2015-02-18 15:25:27Z" class="relativetime">Feb 18 '15 at 15:25</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/239247/anatoly-techtonik"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/9d7e611f31c52f4d62bbe279d4f334de?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/239247/anatoly-techtonik">anatoly techtonik</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">9,662</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="72 silver badges"><span class="badge2"></span><span class="badgecount">72</span></span><span title="82 bronze badges"><span class="badge3"></span><span class="badgecount">82</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-11-10 16:23:42Z" class="relativetime">Nov 10 '14 at 16:23</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/247077/0fnt"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/fb8c88657eef8f23299a8240c30bba0e?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/247077/0fnt">0fnt</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,792</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="33 silver badges"><span class="badge2"></span><span class="badgecount">33</span></span><span title="48 bronze badges"><span class="badge3"></span><span class="badgecount">48</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-26848256" class="comments js-comments-container ">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="2"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+
+
+    <tr id="comment-43286959" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">interesting. Could you post a screenshot to have an idea what to look for, please?</span>
+                    &ndash;&nbsp;<a href="/users/3105390/msciwoj"
+                       title="308 reputation"
+                       class="comment-user">msciwoj</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-11 12:00:17Z" class="relativetime-clean">Dec 11 '14 at 12:00</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-43348916" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@msciwoj Could you post a screenshot to imgur and link here, I&#39;ll try to help out? I&#39;m suspecting you might be missing the Symbol on the immediate left of highlighted headers. When this is collapsed (default state), this symbol is to the far right in the second row.</span>
+                    &ndash;&nbsp;<a href="/users/247077/0fnt"
+                       title="2,792 reputation"
+                       class="comment-user">0fnt</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-13 04:42:24Z" class="relativetime-clean">Dec 13 '14 at 4:42</span></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-43378596" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@user247077 P.S. on linux the tool Shutter is good for screenshots and editing them to circle or highlight (or obscure) parts of the image.</span>
+                    &ndash;&nbsp;<a href="/users/289203/luke-h"
+                       title="2,037 reputation"
+                       class="comment-user">Luke H</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-14 17:32:04Z" class="relativetime-clean">Dec 14 '14 at 17:32</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-46858220" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Is this feature broken for anyone else? When editing the parameters in the &quot;Query String&quot; box, after altering a single character, it refuses to alter the request any further. The only way to do it beyond that is to edit the entire URL/request (which is difficult because it&#39;s all smooshed together)</span>
+                    &ndash;&nbsp;<a href="/users/1203437/coldblackice"
+                       title="1,363 reputation"
+                       class="comment-user">Coldblackice</a>
+                <span class="comment-date" dir="ltr"><span title="2015-03-29 21:03:33Z" class="relativetime-clean">Mar 29 '15 at 21:03</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-46870755" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Coldblackice Can you post a screenshot or problem steps recorder please? I can edit query string just fine. To add a new query string, I either use &amp;= or just start a new line. To edit, change individual k,v or I just delete and start over.</span>
+                    &ndash;&nbsp;<a href="/users/247077/0fnt"
+                       title="2,792 reputation"
+                       class="comment-user">0fnt</a>
+                <span class="comment-date" dir="ltr"><span title="2015-03-30 08:52:06Z" class="relativetime-clean">Mar 30 '15 at 8:52</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-26848256" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link  dno"
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   ></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href=# onclick="">show <b>2</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="19882328"></a>
+<div id="answer-19882328" class="answer" data-answerid="19882328"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="19882328">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">41</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Having been greatly inspired by <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop">Postman for Chrome</a>, I decided to write something similar for Firefox.</p>
+
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/rest-easy/">REST Easy</a>* is a restartless Firefox add-on that aims to provide as much control as possible over requests. The add-on is still in an experimental state <s>(it hasn't even been reviewed by Mozilla yet)</s> but development is progressing nicely.</p>
+
+<p><img src="https://addons.cdn.mozilla.net/user-media/previews/full/161/161956.png?modified=1437785730" alt=""></p>
+
+<p>The project is open source, so if anyone feels compelled to help with development, that would be awesome: <a href="https://github.com/nathan-osman/Rest-Easy">https://github.com/nathan-osman/Rest-Easy</a></p>
+
+<p><sub>* the add-on available from <a href="http://addons.mozilla.org">http://addons.mozilla.org</a> will always be slightly behind the code available on GitHub</sub></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/19882328" title="short permalink to this answer" class="short-link" id="link-post-19882328">share</a><span class="lsep">|</span><a href="/posts/19882328/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/19882328/revisions" title="show all edits to this post">edited <span title="2015-10-22 16:59:00Z" class="relativetime">Oct 22 '15 at 16:59</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2013-11-09 19:53:02Z" class="relativetime">Nov 9 '13 at 19:53</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/193619/nathan-osman"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/11e74c6cb64be4d24fdee076ddb374b0?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/193619/nathan-osman">Nathan Osman</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 28,429" dir="ltr">28.4k</span><span title="51 gold badges"><span class="badge1"></span><span class="badgecount">51</span></span><span title="194 silver badges"><span class="badge2"></span><span class="badgecount">194</span></span><span title="301 bronze badges"><span class="badge3"></span><span class="badgecount">301</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-19882328" class="comments js-comments-container ">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+
+
+    <tr id="comment-34735508" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Seems nice, but lacks the ability to control the request body fully. Currently, it offers key/value abilities, but full control of the post body would be nice.</span>
+                    &ndash;&nbsp;<a href="/users/946979/galmok"
+                       title="514 reputation"
+                       class="comment-user">galmok</a>
+                <span class="comment-date" dir="ltr"><span title="2014-04-01 09:54:49Z" class="relativetime-clean">Apr 1 '14 at 9:54</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-41417408" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">PUT and DELETE support would win me over. Looks good otherwise.</span>
+                    &ndash;&nbsp;<a href="/users/509614/dennis"
+                       title="3,078 reputation"
+                       class="comment-user">Dennis</a>
+                <span class="comment-date" dir="ltr"><span title="2014-10-15 11:28:03Z" class="relativetime-clean">Oct 15 '14 at 11:28</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-43280653" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@NathanOsman, So is that now a feature or still a planned feature?</span>
+                    &ndash;&nbsp;<a href="/users/632951/pacerier"
+                       title="37,356 reputation"
+                       class="comment-user">Pacerier</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-11 08:56:39Z" class="relativetime-clean">Dec 11 '14 at 8:56</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-43280707" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Pacerier: it&#39;s a feature I&#39;m currently working on and am about 90% complete. Hopefully it will be released before the end of the year. There does seem to be a backlog getting addons approved by Mozilla.</span>
+                    &ndash;&nbsp;<a href="/users/193619/nathan-osman"
+                       title="28,429 reputation"
+                       class="comment-user">Nathan Osman</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-11 08:58:30Z" class="relativetime-clean">Dec 11 '14 at 8:58</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+    <tr id="comment-43673821" class="comment js-comment ">
+        <td class="js-comment-actions comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received"
+                                      class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">After over a month of waiting, the new version has been approved. PUT and DELETE support has arrived! And in that month, I&#39;ve also made a ton of other new changes that will show up soon in the next release. (Hopefully it gets approved sooner this time.)</span>
+                    &ndash;&nbsp;<a href="/users/193619/nathan-osman"
+                       title="28,429 reputation"
+                       class="comment-user">Nathan Osman</a>
+                <span class="comment-date" dir="ltr"><span title="2014-12-23 19:18:49Z" class="relativetime-clean">Dec 23 '14 at 19:18</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-19882328" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="8979009"></a>
+<div id="answer-8979009" class="answer" data-answerid="8979009"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="8979009">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">14</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>It's a bit ugly, but there's the <a href="https://chrome.google.com/webstore/detail/fhjcajmcbmldlhcimfajhfbgofnpcjmb">Simple REST Client</a> extension for Chrome. </p>
+
+<p>It works great for me -- do remember that you can still use the debugger with it. The Network pane is particularly useful; it'll give you rendered JSON objects and error pages.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/8979009" title="short permalink to this answer" class="short-link" id="link-post-8979009">share</a><span class="lsep">|</span><a href="/posts/8979009/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-01-23 21:41:48Z" class="relativetime">Jan 23 '12 at 21:41</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/12779/nate"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/55c439c4d52dcb2cc975fc047560f006?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/12779/nate">Nate</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,201</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="17 silver badges"><span class="badge2"></span><span class="badgecount">17</span></span><span title="35 bronze badges"><span class="badge3"></span><span class="badgecount">35</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-8979009" class="comments js-comments-container  dno">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+                            <tr><td></td><td></td></tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-8979009" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="13058007"></a>
+<div id="answer-13058007" class="answer" data-answerid="13058007"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="13058007">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">10</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>For firefox there is also an extension called RESTClient which is quite nice:</p>
+
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/restclient" rel="noreferrer">https://addons.mozilla.org/en-US/firefox/addon/restclient</a></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/13058007" title="short permalink to this answer" class="short-link" id="link-post-13058007">share</a><span class="lsep">|</span><a href="/posts/13058007/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2012-10-24 21:25:55Z" class="relativetime">Oct 24 '12 at 21:25</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/1330240/johan-falk"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/pIMvP.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/1330240/johan-falk">Johan Falk</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">4,093</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="23 silver badges"><span class="badge2"></span><span class="badgecount">23</span></span><span title="39 bronze badges"><span class="badge3"></span><span class="badgecount">39</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-13058007" class="comments js-comments-container  dno">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+                            <tr><td></td><td></td></tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-13058007" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="28065137"></a>
+<div id="answer-28065137" class="answer" data-answerid="28065137"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="28065137">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You specifically asked for "extension or functionality in Chrome and/or Firefox", which the answers you have already received provide, but I do like the simplicity of <a href="https://stackoverflow.com/a/3307401/575530">oezi's answer to the closed question "how to send a post request with a web browser"</a> for simple parameters. oezi says:</p>
+
+<p>with a form, just set <code>method</code> to <code>"post"</code></p>
+
+<pre><code>&lt;form action="blah.php" method="post"&gt;
+  &lt;input type="text" name="data" value="mydata" /&gt;
+  &lt;input type="submit" /&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>I.e. build yourself a very simple page to test the post actions.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/28065137" title="short permalink to this answer" class="short-link" id="link-post-28065137">share</a><span class="lsep">|</span><a href="/posts/28065137/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/28065137/revisions" title="show all edits to this post">edited <span title="2017-05-23 12:02:49Z" class="relativetime">May 23 at 12:02</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/-1/community"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/a007be5a61f6aa8f3e85ae2fc18dd66e?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/-1/community">Community</a><span class="mod-flair" title="moderator">&#9830;</span>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2015-01-21 10:42:22Z" class="relativetime">Jan 21 '15 at 10:42</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/575530/dumbledad"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/32e5c8d7e5bcf2abcc05090a79d467a4?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/575530/dumbledad">dumbledad</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">5,081</span><span title="11 gold badges"><span class="badge1"></span><span class="badgecount">11</span></span><span title="54 silver badges"><span class="badge2"></span><span class="badgecount">54</span></span><span title="137 bronze badges"><span class="badge3"></span><span class="badgecount">137</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-28065137" class="comments js-comments-container  dno">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+                            <tr><td></td><td></td></tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-28065137" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="32254684"></a>
+<div id="answer-32254684" class="answer" data-answerid="32254684"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="32254684">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>May not be directly related to browsers but <a href="http://www.telerik.com/fiddler" rel="noreferrer">fiddler</a> is another good software.</p>
+
+<p><a href="https://i.stack.imgur.com/CLNgi.png" rel="noreferrer"><img src="https://i.stack.imgur.com/CLNgi.png" alt="enter image description here"></a></p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/32254684" title="short permalink to this answer" class="short-link" id="link-post-32254684">share</a><span class="lsep">|</span><a href="/posts/32254684/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-08-27 16:17:28Z" class="relativetime">Aug 27 '15 at 16:17</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2407966/vineel-kumar-reddy-kovvuri"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/e4ed82c24f4212e54b9c75ff8446c1f6?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2407966/vineel-kumar-reddy-kovvuri">Vineel Kumar Reddy Kovvuri</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">786</span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="12 bronze badges"><span class="badge3"></span><span class="badgecount">12</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-32254684" class="comments js-comments-container  dno">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+                            <tr><td></td><td></td></tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-32254684" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="4797600"></a>
+<div id="answer-4797600" class="answer" data-answerid="4797600"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4797600">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You could also use Watir or Watin to automate browsers. Watir is written for ruby and Watin is for .Net languages. Not sure if it's what you are looking for though.</p>
+
+<ul>
+<li><a href="http://watin.sourceforge.net/" rel="nofollow">http://watin.sourceforge.net/</a></li>
+<li><a href="http://watir.com/" rel="nofollow">http://watir.com/</a></li>
+</ul>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/4797600" title="short permalink to this answer" class="short-link" id="link-post-4797600">share</a><span class="lsep">|</span><a href="/posts/4797600/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="/posts/4797600/revisions" title="show all edits to this post">edited <span title="2013-12-12 06:22:12Z" class="relativetime">Dec 12 '13 at 6:22</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/33204/slm"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/6a61a40ee46871d39e99835351e178ef?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/33204/slm">slm</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">6,994</span><span title="8 gold badges"><span class="badge1"></span><span class="badgecount">8</span></span><span title="51 silver badges"><span class="badge2"></span><span class="badgecount">51</span></span><span title="63 bronze badges"><span class="badge3"></span><span class="badgecount">63</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-01-25 18:52:33Z" class="relativetime">Jan 25 '11 at 18:52</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/409762/ceres"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/a30fbd1dbc45c784df20520877ba3edc?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/409762/ceres">Ceres</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,508</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="11 silver badges"><span class="badge2"></span><span class="badgecount">11</span></span><span title="19 bronze badges"><span class="badge3"></span><span class="badgecount">19</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4797600" class="comments js-comments-container  dno">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+                            <tr><td></td><td></td></tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-4797600" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="29419094"></a>
+<div id="answer-29419094" class="answer" data-answerid="29419094"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="29419094">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Try Runscope. A free tool sampling their service is provided at <a href="https://www.hurl.it/" rel="nofollow">https://www.hurl.it/</a> . You can set the method, authentication, headers, parameters, and body. Response shows status code, headers, and body. The response body can be formatted from JSON with a collapsable heirarchy. Paid accounts can automate test API calls and use return data to build new test calls. 
+COI disclosure: I have no relationship to Runscope.</p>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/29419094" title="short permalink to this answer" class="short-link" id="link-post-29419094">share</a><span class="lsep">|</span><a href="/posts/29419094/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2015-04-02 17:37:17Z" class="relativetime">Apr 2 '15 at 17:37</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/2012646/bennett-brown"><div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/w8LGY.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/2012646/bennett-brown">Bennett Brown</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,832</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="12 silver badges"><span class="badge2"></span><span class="badgecount">12</span></span><span title="24 bronze badges"><span class="badge3"></span><span class="badgecount">24</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-29419094" class="comments js-comments-container ">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+
+
+    <tr id="comment-47017180" class="comment js-comment ">
+        <td class="js-comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text js-comment-text-and-form">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">There is a free tier for Runscope too, it just has a lower limit of request per month and only 1 team member.  Disclosure: I do :-)</span>
+                    &ndash;&nbsp;<a href="/users/6819/darrel-miller"
+                       title="101,530 reputation"
+                       class="comment-user">Darrel Miller</a>
+                <span class="comment-date" dir="ltr"><span title="2015-04-02 21:34:20Z" class="relativetime-clean">Apr 2 '15 at 21:34</span></span>
+                                                                            </div>
+        </td>
+    </tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-29419094" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+
+  
+<a name="24846007"></a>
+<div id="answer-24846007" class="answer" data-answerid="24846007"  itemscope itemtype="http://schema.org/Answer">
+    <table>
+        <tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="24846007">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Check out <code>http-tool</code> for firefox ..</p>
+
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/http-tool/" rel="nofollow">https://addons.mozilla.org/en-US/firefox/addon/http-tool/</a></p>
+
+<pre><code>Aimed at web developers who need to debug HTTP requests and responses.
+Can be extremely useful while developing REST based api.
+
+Features:
+* GET
+* HEAD
+* POST
+* PUT
+* DELETE
+
+Add header(s) to request.
+Add body content to request.
+
+View header(s) in response.
+View body content in response.
+View status code of response.
+View status text of response.
+</code></pre>
+    </div>
+    <table class="fw">
+    <tr>
+    <td class="vt">
+<div class="post-menu"><a href="/a/24846007" title="short permalink to this answer" class="short-link" id="link-post-24846007">share</a><span class="lsep">|</span><a href="/posts/24846007/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="/posts/24846007/revisions" title="show all edits to this post">edited <span title="2014-12-01 16:49:24Z" class="relativetime">Dec 1 '14 at 16:49</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-07-19 23:42:34Z" class="relativetime">Jul 19 '14 at 23:42</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="/users/595833/bobbyrne01"><div class="gravatar-wrapper-32"><img src="https://www.gravatar.com/avatar/f8f224920131a7250804734fa4561493?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="/users/595833/bobbyrne01">bobbyrne01</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,734</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="26 silver badges"><span class="badge2"></span><span class="badgecount">26</span></span><span title="62 bronze badges"><span class="badge3"></span><span class="badgecount">62</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </table>
+</td>
+        </tr>
+    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-24846007" class="comments js-comments-container  dno">
+		        <table>
+                    <tbody class="js-comments-list"
+                           data-remaining-comments-count="0"
+                           data-canpost="false"
+                           data-cansee="true"
+                           data-comments-unavailable="false"
+                           data-addlink-disabled="true">
+
+                            <tr><td></td><td></td></tr>
+                    </tbody>
+		        </table>
+	    </div>
+
+        <div id="comments-link-24846007" data-rep=50 data-anon=true>
+
+                <a class="js-add-link comments-link disabled-link "
+                   title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."
+                   >add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href=# onclick=""></a>
+        </div>         
+    </td>
+</tr>    </table>
+</div>
+                    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="/users/-1/community">Community</a><span class="mod-flair" title="moderator">&#9830;</span> <span dir="ltr"><span title="2016-01-06 19:47:26Z" class="relativetime">Jan 6 '16 at 19:47</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="/help/whats-reputation">reputation</a> on this site (the <a href="/help/privileges/new-user">association bonus does not count</a>).
+<br /><br />
+Would you like to answer one of these <a href="/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+                        <h2 class="bottom-notice" data-loc="1">
+Not the answer you&#39;re looking for?                            Browse other questions tagged <a href="/questions/tagged/firefox" class="post-tag" title="show questions tagged &#39;firefox&#39;" rel="tag">firefox</a> <a href="/questions/tagged/google-chrome" class="post-tag" title="show questions tagged &#39;google-chrome&#39;" rel="tag"><img src="//i.stack.imgur.com/EdUwb.png" height="16" width="18" alt="" class="sponsor-tag-img">google-chrome</a> <a href="/questions/tagged/http-post" class="post-tag" title="show questions tagged &#39;http-post&#39;" rel="tag">http-post</a>  or <a href="/questions/ask">ask your own question</a>.                        </h2>
+            </div>
+        </div>
+                <div id="sidebar" class="show-votes" role="complementary" aria-label="sidebar">
+                            <div class="module question-stats">
+                    <table id="qinfo">
+                        <tr>
+                            <td>
+                                <p class="label-key">asked</p>
+                            </td>
+                            <td style="padding-left: 10px">
+                                <p class="label-key" title="2011-01-25 18:45:15Z"><b>6 years, 10 months ago</b></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="label-key">viewed</p>
+                            </td>
+
+                            <td style="padding-left: 10px">
+                                <p class="label-key">
+                                    <b>704,443 times</b>
+                                </p>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td>
+                                    <p class="label-key">active</p>
+                                </td>
+                                <td style="padding-left: 10px">
+                                    <p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2017-11-20 11:21:32Z">26 days ago</a></b></p>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+                        
+<div id="clc-tsb" class="everyonelovesstackoverflow"></div>
+            <div id="hireme"></div>
+<script>;window.clc=window.clc||{},window.clc.init=window.clc.init||function(a){var b=window,c=b.document;try{if("function"!=typeof[].indexOf||!window.addEventListener||!a.allowed)return;var d=new RegExp(a.allowed);if(!d.test(location.hostname))return;if(b.clc.options)for(var e in b.clc.options)a[e]=b.clc.options[e];b.clc.cmd="undefined"==typeof b.clc.cmd?[]:b.clc.cmd,b.clc.autoload=b.clc.autoload||function(){"function"==typeof b.clc.load?b.clc.load():b.clc.cmd.push(function(a){a.load()})};var f=a.wv;if(c.hidden&&f)return void c.addEventListener("visibilitychange",function b(){c.hidden||(window.clc.init(a),c.removeEventListener("visibilitychange",b))});b.clc.options=a,a.al&&b.clc.autoload();var g=/Trident/i.test(navigator.userAgent)?a.lib.replace(/(\.min)?\.js(\?v=[0-9a-fA-F]+)?$/,".ie$1.js$2"):a.lib,h=c.createElement("script");h.async=!0,h.src=g,c.body.appendChild(h)}catch(a){}},window.clc.loadDisplayAds=window.clc.loadDisplayAds||function(){function a(b){b.style.height=b.style.maxHeight=b.style.minHeight="auto",b.style.display="IFRAME"===b.tagName?"none":"block",[].forEach.call(b.children,a)}function b(a){new Image().src="https://"+e+"/stalled.gif?"+a}var c=window,d=c.document,e="clc.stackoverflow.com",f={slots:{lb:[[728,90]],mlb:[[728,90]],sb:[[300,250],[300,600]],"tag-sponsorship":[[730,135]]},ids:{"dfp-tlb":"lb","dfp-mlb":"mlb","dfp-tsb":"sb","dfp-tag":"tag-sponsorship","clc-tlb":"lb","clc-mlb":"mlb","clc-tsb":"sb"}},g=/^\/tags\//.test(location.pathname)||/^\/questions\/tagged\//.test(location.pathname)?"tag-pages":"question-pages",h=location.hostname;/^clc\./.test(location.hostname)&&(h="test/dev.stackoverflow.com");var i=[4385506061,4386578282,4386579572];return function(e){var j=(e&&0<e.length?e:Object.keys(f.ids)).map(function(a){return d.getElementById(a)}).filter(function(a){return!!a&&/^\s*$/.test(a.innerHTML)}).map(function(a){return a.id});if(0!==j.length){c.googletag=c.googletag||{},c.googletag.cmd=c.googletag.cmd||[],c.googletag.cmd.push(function(){var e=c.googletag,k=d.createElement("div");k.className="adsbox",k.id="clc-abd",k.style.position="absolute",k.style.pointerEvents="none",k.innerHTML="&nbsp;",d.body.appendChild(k);var l=e.pubads();l.enableSingleRequest(),l.addEventListener("slotRenderEnded",function(c){var e=c.serviceName,f=c.slot,g=c.lineItemId;try{var h=f.getSlotElementId(),j=[];h||j.push("id=0");var k=d.getElementById(h);if(!h||k?k.hasAttribute("data-clc-stalled")&&j.push("st=1"):j.push("el=0"),0!==j.length)return void b(j.join("&"));-1===i.indexOf(g)?k.setAttribute("data-clc-prefilled","true"):a(k),k.setAttribute("data-clc-ready","true")}catch(a){var l=d.getElementById("dfp-tsb")||d.getElementById("clc-tsb");l&&l.setAttribute("data-clc-ready","true"),b("e=1")}});var m=c.dfp_targeting||{};m&&Object.keys(m).forEach(function(a){l.setTargeting(a,m[a])});for(var n=0,o=j;n<o.length;n++){var p=o[n],q=f.ids[p],r=f.slots[q],s="/"+"248424177"+"/"+h+"/"+q+"/"+g,t=e.defineSlot(s,r,p);("tag-sponsorship"===q||"sb"==q)&&t.setCollapseEmptyDiv(!0,!0),t.addService(l),!1}e.enableServices();for(var p,u=0,v=j;u<v.length;u++)p=v[u],e.display(p)});var k=d.createElement("script");k.async=!0,k.src="https://www.googletagservices.com/tag/js/gpt.js",document.body.appendChild(k)}}}(),window.clc.init.call(null, {"lib":"https://cdn.sstatic.net/clc/clc.min.js?v=b0e6e728032a","style":"https://cdn.sstatic.net/clc/styles/clc.min.css?v=b18b3a2258df","u":"https://clc.stackoverflow.com/markup.js","wa":true,"kt":2000,"tto":true,"h":"clc.stackoverflow.com","allowed":"^(((talent\\.)?stackoverflow)|(blog\\.codinghorror)|(serverfault|askubuntu)|([^\\.]+\\.stackexchange))\\.com$","wv":true,"al":false,"ga":false});</script>            <script>
+window.clc_request='At_mi5x6RNUIAAAAAF40SQACAAAAAgAAAAAhAAAAfGZpcmVmb3h8Z29vZ2xlLWNocm9tZXxodHRwLXBvc3R8ALDAZTEikpDlyzk';                    clc.autoload();
+                var dfp_targeting={Registered:['false'],'so-tag':['firefox','google-chrome','http-post']};                            </script>
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="/q/3307379" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">35</div>
+	</a>
+	<a href="/questions/3307379/how-to-send-a-post-request-with-a-web-browser?noredirect=1" class="question-hyperlink">how to send a post request with a web browser</a>
+</div>
+<div class="spacer">
+	<a href="/q/21046118" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">11</div>
+	</a>
+	<a href="/questions/21046118/how-to-simulate-http-post-on-localhost-windows-not-unix?noredirect=1" class="question-hyperlink">How to simulate HTTP POST on localhost (*Windows* not Unix)?</a>
+</div>
+<div class="spacer">
+	<a href="/q/1244433" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">21</div>
+	</a>
+	<a href="/questions/1244433/how-do-i-post-an-xml-string-to-a-webservice-for-testing?noredirect=1" class="question-hyperlink">How do I POST an XML string to a webservice for testing?</a>
+</div>
+<div class="spacer">
+	<a href="/q/15711841" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">6</div>
+	</a>
+	<a href="/questions/15711841/how-to-make-http-https-post-requests-manually?noredirect=1" class="question-hyperlink">How to make http/https POST requests manually?</a>
+</div>
+<div class="spacer">
+	<a href="/q/9295524" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">3</div>
+	</a>
+	<a href="/questions/9295524/how-do-i-send-fake-post-header-to-a-page?noredirect=1" class="question-hyperlink">How do I send &#39;fake&#39; POST header to a page?</a>
+</div>
+<div class="spacer">
+	<a href="/q/13752433" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/13752433/is-there-a-quick-way-send-post-requests?noredirect=1" class="question-hyperlink">Is there a quick way send post requests?</a>
+</div>
+<div class="spacer">
+	<a href="/q/34297492" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/34297492/inno-setup-open-link-with-an-http-post-request?noredirect=1" class="question-hyperlink">Inno Setup open link with an HTTP POST request</a>
+</div>
+<div class="spacer">
+	<a href="/q/32857702" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="/questions/32857702/how-to-store-data-on-data-base-in-android-studio-with-api-23?noredirect=1" class="question-hyperlink">How to store data on data base in android studio with API 23?</a>
+</div>
+<div class="spacer">
+	<a href="/q/41153986" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="/questions/41153986/making-a-simple-web-api-post-request?noredirect=1" class="question-hyperlink">Making a simple Web API post request</a>
+</div>
+<div class="spacer">
+	<a href="/q/41806207" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="/questions/41806207/post-data-through-url-to-webapi?noredirect=1" class="question-hyperlink">Post data through Url to webapi</a>
+</div>					<div class="spacer more">
+				<a href="/questions/linked/4797534">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+                <div class="module sidebar-related">
+                    <h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer"><a href="/q/1099787" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">301</div></a><a href="/questions/1099787/jquery-ajax-post-sending-options-as-request-method-in-firefox" class="question-hyperlink">jQuery $.ajax(), $.post sending &ldquo;OPTIONS&rdquo; as REQUEST_METHOD in Firefox</a></div><div class="spacer"><a href="/q/1820927" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">178</div></a><a href="/questions/1820927/request-monitoring-in-chrome" class="question-hyperlink">Request Monitoring in Chrome</a></div><div class="spacer"><a href="/q/3397113" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">865</div></a><a href="/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome" class="question-hyperlink">How to remove border (outline) around text/input boxes? (Chrome)</a></div><div class="spacer"><a href="/q/4559180" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">115</div></a><a href="/questions/4559180/secret-copy-to-clipboard-javascript-function-in-chrome-and-firefox" class="question-hyperlink">Secret copy to clipboard JavaScript function in Chrome and Firefox?</a></div><div class="spacer"><a href="/q/5912791" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">166</div></a><a href="/questions/5912791/how-to-remove-the-arrow-from-a-select-element-in-firefox" class="question-hyperlink">How to remove the arrow from a select element in Firefox</a></div><div class="spacer"><a href="/q/9767952" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">212</div></a><a href="/questions/9767952/how-to-add-parameters-to-httpurlconnection-using-post" class="question-hyperlink">How to add parameters to HttpURLConnection using POST</a></div><div class="spacer"><a href="/q/9847564" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted extra-large">1165</div></a><a href="/questions/9847564/how-do-i-get-asp-net-web-api-to-return-json-instead-of-xml-using-chrome" class="question-hyperlink">How do I get ASP.NET Web API to return JSON instead of XML using Chrome?</a></div><div class="spacer"><a href="/q/20340138" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">403</div></a><a href="/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome" class="question-hyperlink">Remove blue border from css custom-styled button in Chrome</a></div><div class="spacer"><a href="/q/25277457" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">146</div></a><a href="/questions/25277457/google-chrome-redirecting-localhost-to-https" class="question-hyperlink">Google Chrome redirecting localhost to https</a></div><div class="spacer"><a href="/q/26364914" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">100</div></a><a href="/questions/26364914/http-request-in-swift-with-post-method" class="question-hyperlink">HTTP Request in Swift with POST method</a></div>
+                    </div>
+                </div>
+
+<div id="hot-network-questions" class="module tex2jax_ignore">
+    <h4>
+        <a href="https://stackexchange.com/questions?tab=hot"
+           class="js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li >
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="https://codegolf.stackexchange.com/questions/150650/binary-sequences" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Binary Sequences
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-history" title="History Stack Exchange"></div><a href="https://history.stackexchange.com/questions/42322/why-didnt-the-british-grand-fleet-force-an-engagement-with-the-german-imperial" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:324 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why didn&#39;t the British Grand Fleet force an engagement with the German Imperial Navy in WW1?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="https://scifi.stackexchange.com/questions/176188/was-the-mythology-in-moana-based-on-an-established-myth" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Was the mythology in &quot;Moana&quot; based on an established myth?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-gaming" title="Arqade"></div><a href="https://gaming.stackexchange.com/questions/323037/why-are-some-csgo-weapons-considered-noob-guns" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:41 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are some CS:GO weapons considered &quot;noob guns&quot;?
+                </a>
+
+            </li>
+            <li >
+                <div class="favicon favicon-politics" title="Politics Stack Exchange"></div><a href="https://politics.stackexchange.com/questions/26905/how-could-the-free-market-limit-the-effects-of-net-neutralitys-repeal" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:475 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How could the free market limit the effects of net neutrality&#39;s repeal?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="https://math.stackexchange.com/questions/2568050/puzzle-problem-cheese-seller" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Puzzle problem (Cheese seller)
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="https://worldbuilding.stackexchange.com/questions/100183/can-a-civilization-be-reduced-to-the-stone-age-by-a-conventional-war" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can a civilization be reduced to the Stone age by a conventional war?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-crypto" title="Cryptography Stack Exchange"></div><a href="https://crypto.stackexchange.com/questions/53974/when-adding-two-points-on-an-elliptic-curve-why-flip-over-the-x-axis" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:281 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    When adding two points on an elliptic curve, why flip over the x-axis?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="https://english.stackexchange.com/questions/422334/antonym-for-thimble" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    antonym for &quot;thimble&quot;
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="https://math.stackexchange.com/questions/2569031/derivatives-simple-question" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Derivatives: Simple Question
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="https://english.stackexchange.com/questions/422265/closet-vs-wardrobe-why-is-the-first-more-common-in-the-us" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    &quot;Closet&quot; vs. &quot;wardrobe&quot; Why is the first more common in the US?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="https://english.stackexchange.com/questions/422464/single-word-request-for-exercise-book" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    single word request for exercise book
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-movies" title="Movies &amp; TV Stack Exchange"></div><a href="https://movies.stackexchange.com/questions/83620/which-worse-thing-was-luke-expecting-in-star-wars-a-new-hope" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:367 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Which worse thing was Luke expecting in Star Wars: A New Hope?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-diy" title="Home Improvement Stack Exchange"></div><a href="https://diy.stackexchange.com/questions/128944/are-there-skilled-professionals-who-will-supervise-unskilled-diy-labor" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:73 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are there skilled professionals who will supervise unskilled DIY labor?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="https://math.stackexchange.com/questions/2566920/why-is-the-hypotenuse-in-trig-always-positive-regardless-of-the-quadrant" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why is the hypotenuse in trig always positive regardless of the quadrant?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="https://rpg.stackexchange.com/questions/111856/does-dealing-0-damage-to-a-concentrating-spellcaster-require-a-saving-throw" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Does dealing 0 damage to a concentrating spellcaster require a saving throw?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="https://workplace.stackexchange.com/questions/103983/how-do-i-give-feedback-when-i-know-more-about-the-topic-than-the-presenter" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How do I give feedback when I know more about the topic than the presenter?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="https://money.stackexchange.com/questions/88215/scamming-an-investor-by-offering-a-quick-sale-of-a-property-at-her-named-price" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Scamming an investor by offering a quick sale of a property at her named price
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-politics" title="Politics Stack Exchange"></div><a href="https://politics.stackexchange.com/questions/26894/has-the-korean-war-actually-ended" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:475 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Has the Korean War actually ended?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="https://money.stackexchange.com/questions/88291/the-proper-term-for-a-third-party-economy" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The proper term for a third party economy
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-interpersonal" title="Interpersonal Skills Stack Exchange"></div><a href="https://interpersonal.stackexchange.com/questions/8070/how-to-stop-someone-from-complaining-about-a-third-person-in-front-of-you-withou" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:680 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to stop someone from complaining about a third person in front of you without sounding rude?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="https://academia.stackexchange.com/questions/100510/letter-writer-snapped-at-my-reminder-email-what-can-i-do-in-the-future-to-preve" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Letter writer snapped at my reminder email. What can I do in the future to prevent this, and should I still accept his letter?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="https://tex.stackexchange.com/questions/406398/text-box-next-to-equation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Text box next to equation
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="https://codegolf.stackexchange.com/questions/150764/make-a-plain-pie" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Make a Plain PIE!
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" 
+           class="show-more js-show-more js-gps-track" 
+           data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+        </div>
+        </div>
+<script>
+StackExchange.ready(function(){$.get('/posts/4797534/ivc/41a5');});
+</script>
+<noscript>
+    <div><img src="/posts/4797534/ivc/41a5" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+        </div>
+    </div>
+
+    <footer id="footer" class="s-footer js-footer" role="contentinfo">
+        <div class="-container">
+            <div class="g-row">
+                    <div class="-logo">
+
+                        <a href="https://stackoverflow.com"><svg aria-hidden="true" class="svg-icon native iconLogo" width="150" height="30" viewBox="0 0 150 30"><g><path d="M33.9 18.6l-1.7-.2c-1.3-.1-1.9-.6-1.9-1.6 0-1.1.8-1.8 2.4-1.8 1.1 0 2.1.3 2.8.8l1-1c-1-.8-2.3-1.1-3.8-1.1-2.3 0-3.9 1.2-3.9 3.1 0 1.8 1.1 2.7 3.2 2.9l1.8.2c1.2.1 1.8.6 1.8 1.6 0 1.3-1.1 1.9-2.8 1.9-1.3 0-2.5-.3-3.3-1.2l-1 1c1.2 1.1 2.6 1.5 4.4 1.5 2.6 0 4.3-1.2 4.3-3.2-.2-2-1.5-2.7-3.3-2.9zm13.3-4.8c-1.7 0-2.8.3-3.7 1.5l1 1c.6-.9 1.3-1.2 2.7-1.2 1.9 0 2.7.8 2.7 2.3v1h-3.2c-2.4 0-3.7 1.2-3.7 3.1 0 .8.3 1.6.8 2.2.7.7 1.5 1 3 1 1.4 0 2.2-.3 3.1-1.1v1h1.6v-7.2c-.1-2.4-1.5-3.6-4.3-3.6zm2.7 7c0 .9-.2 1.5-.5 1.8-.7.6-1.5.7-2.4.7-1.7 0-2.4-.6-2.4-1.8 0-1.2.8-1.9 2.4-1.9h3l-.1 1.2zm7.6-5.6c1 0 1.6.3 2.4 1.2l1-1c-1.1-1.2-2-1.6-3.5-1.6-2.7 0-4.7 1.8-4.7 5.5 0 3.6 2 5.5 4.7 5.5 1.5 0 2.4-.4 3.5-1.6l-1.1-1c-.8.9-1.4 1.2-2.4 1.2s-1.9-.4-2.5-1.2c-.5-.7-.7-1.5-.7-2.9 0-1.3.2-2.2.7-2.9.7-.8 1.6-1.2 2.6-1.2zm13.4-1.3H69l-4.8 4.7V9.1h-1.6v15.4h1.6v-3.9l1.9-1.9 3.6 5.8h1.9l-4.4-6.9 3.7-3.7zm7.3-.33c-1.6 0-2.7.6-3.4 1.4-1 1-1.3 2.3-1.3 4.3s.3 3.3 1.3 4.3c.7.7 1.8 1.4 3.4 1.4 1.6 0 2.8-.6 3.4-1.4 1-1 1.3-2.3 1.3-4.3s-.3-3.3-1.3-4.3c-.6-.8-1.7-1.4-3.4-1.4zm1.3 8.3c-.3.3-.7.5-1.3.5-.6 0-1-.2-1.3-.5-.6-.6-.6-1.6-.6-2.7 0-1.2.1-2.1.6-2.7.3-.3.7-.5 1.3-.5.6 0 1 .2 1.3.5.6.6.6 1.5.6 2.7.1 1.2 0 2.2-.6 2.7zm10.8-8.2l-2.2 6.9-2.3-6.9h-2.9l4.1 11.1h2.2l4.1-11.1h-3zm7.6-.1c-2.9 0-4.8 2-4.8 5.7 0 4.5 2.5 5.7 5.1 5.7 2 0 3.1-.6 4.2-1.7l-1.7-1.6c-.7.7-1.3 1-2.5 1-1.6 0-2.4-1-2.4-2.5h6.9v-1.2c0-3.2-1.7-5.4-4.8-5.4zm-2.1 4.6c0-.5.1-.8.3-1.2.3-.7.9-1.2 1.9-1.2.9 0 1.6.5 1.9 1.2.2.4.2.7.3 1.2h-4.4zm11-3.4v-1.1h-2.7v11.1h2.8v-6.7c0-1.4.9-2 1.8-2 .7 0 1 .2 1.5.7l2.1-2.1c-.8-.8-1.5-1-2.6-1-1.3-.1-2.3.4-2.9 1.1zm6.3-2.3v12.3h2.8v-8.8h2v-2.1h-2v-1.2c0-.6.3-1 1-1h1.1v-2.3h-1.6c-2.3 0-3.3 1.6-3.3 3.1zm16.2 1.1c-1.6 0-2.7.6-3.4 1.4-1 1-1.3 2.3-1.3 4.3s.3 3.3 1.3 4.3c.7.7 1.8 1.4 3.4 1.4 1.6 0 2.8-.6 3.4-1.4 1-1 1.3-2.3 1.3-4.3s-.3-3.3-1.3-4.3c-.6-.8-1.8-1.4-3.4-1.4zm1.3 8.3c-.3.3-.7.5-1.3.5-.6 0-1-.2-1.3-.5-.6-.6-.6-1.6-.6-2.7 0-1.2.1-2.1.6-2.7.3-.3.7-.5 1.3-.5.6 0 1 .2 1.3.5.6.6.6 1.5.6 2.7 0 1.2 0 2.2-.6 2.7zm16.5-8.2l-1.8 6.9-2.3-6.9h-2l-2.3 6.9-1.8-6.9H134l3.4 11.1h2.3l2.3-7 2.3 7h2.3l3.4-11.1h-2.9zm-25.1 7.7V9.27h-2.8v12.3c0 1.6 1 3.2 3.2 3.2h1.6v-2.3h-1c-.7 0-1-.4-1-1.1zM41.3 15.6l1.4-1.4h-3v-3.5h-1.6v11.1c0 1.6.9 2.9 2.7 2.9h1.1v-1.3h-.8c-1 0-1.5-.6-1.5-1.6v-6.1h1.7v-.1z" fill="#222426"/><path fill="#BCBBBB" d="M21 27v-8h3v11H0V19h3v8z"/><path d="M5.4 19.1l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zm1.8-6.8l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm3.4-5.9l10.2 8.5 1.7-2-10.2-8.5-1.7 2zM17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zM5 25h14v-3H5v3z" fill="#F48024"/></g></svg></a>
+                    </div>
+                
+                    <nav class="-nav js-category _visible" data-name="default">
+                        <h5 class="-title"><a href="https://stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 2, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="/questions" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 16})">Questions</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/jobs" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 17})">Jobs</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/jobs/directory/developer-jobs" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 11})">Developer Jobs Directory</a></li>
+                                     <li class="-item"><a href="https://stackoverflow.com/jobs/salary" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 28})">Salary Calculator</a></li>
+                                                            <li class="-item"><a href="/help" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 3 })">Help</a></li>
+                                <li class="-item"><a onclick='StackExchange.switchMobile("on")' class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 12 })">Mobile</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="-nav js-category _visible" data-name="default">
+                        <h5 class="-title"><a href="https://www.stackoverflowbusiness.com/?utm_source=so-footer&utm_medium=referral&utm_campaign=brand-activation&utm_term=sotob2b-footer-business-category" class="js-gps-track" data-gps-track="footer.click({ location: 2, link: 19 })">Stack Overflow<br /> Business</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/talent?utm_source=so-footer&utm_medium=referral&utm_campaign=brand-activation&utm_term=sotob2b-footer-talent" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 20 })">Talent</a></li>
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/advertise?utm_source=so-footer&utm_medium=referral&utm_campaign=brand-activation&utm_term=sotob2b-footer-advertise" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 21 })">Ads</a></li>
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/enterprise?utm_source=so-footer&utm_medium=referral&utm_campaign=brand-activation&utm_term=sotob2b-footer-enterprise" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 22 })">Enterprise</a></li>
+                        </ul>
+                    </nav>
+                <nav class="-nav js-category _visible" data-name="default">
+                    <h5 class="-title"><a class="js-gps-track" data-gps-track="footer.click({ location: 2, link: 1 })" href="https://stackoverflow.com/company/about">Company</a></h5>
+                    <ul class="-list">
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 1 })" href="https://stackoverflow.com/company/about">About</a></li>
+                                                <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 27 })" href="https://stackoverflow.com/company/press">Press</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 9 })" href="https://stackoverflow.com/company/work-here">Work Here</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 7 })" href="https://stackexchange.com/legal">Legal</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 8 })" href="https://stackexchange.com/legal/privacy-policy">Privacy Policy</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 13 })" href="https://stackoverflow.com/company/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="-network g-row">
+                    <a href="#" class="-back-trigger js-back"><svg aria-hidden="true" class="svg-icon iconArrowLeftAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M10.58 16L12 14.59 6.4 9 12 3.41 10.57 2l-7 7z"/></svg></a>
+                    <div>
+                        <h5 class="-title"><a href="https://stackexchange.com">Stack Exchange<br> Network</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Technology">Technology</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Life / Arts">Life / Arts</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Culture / Recreation">Culture / Recreation</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Science">Science</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Other">Other</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <nav class="-nav js-category" data-name="Technology">
+        <ul class="-list">
+                <li class="-item"><a href="https://stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                <li class="-item"><a href="https://serverfault.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="system and network administrators">Server Fault</a></li>
+                <li class="-item"><a href="https://superuser.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="computer enthusiasts and power users">Super User</a></li>
+                <li class="-item"><a href="https://webapps.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="power users of web applications">Web Applications</a></li>
+                <li class="-item"><a href="https://askubuntu.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                <li class="-item"><a href="https://webmasters.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="pro webmasters">Webmasters</a></li>
+                <li class="-item"><a href="https://gamedev.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and independent game developers">Game Development</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://tex.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                <li class="-item"><a href="https://softwareengineering.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professionals, academics, and students working within the systems development life cycle">Software Engineering</a></li>
+                <li class="-item"><a href="https://unix.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                <li class="-item"><a href="https://apple.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                <li class="-item"><a href="https://wordpress.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="WordPress developers and administrators">WordPress Development</a></li>
+                <li class="-item"><a href="https://gis.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                <li class="-item"><a href="https://electronics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://android.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                <li class="-item"><a href="https://security.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="information security professionals">Information Security</a></li>
+                <li class="-item"><a href="https://dba.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                <li class="-item"><a href="https://drupal.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Drupal developers and administrators">Drupal Answers</a></li>
+                <li class="-item"><a href="https://sharepoint.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="SharePoint enthusiasts">SharePoint</a></li>
+                <li class="-item"><a href="https://ux.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="user experience researchers and experts">User Experience</a></li>
+                <li class="-item"><a href="https://mathematica.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Wolfram Mathematica">Mathematica</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://salesforce.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                <li class="-item"><a href="https://expressionengine.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                <li class="-item"><a href="https://pt.stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programadores profissionais e entusiastas">Stack Overflow em Portugu&#234;s</a></li>
+                <li class="-item"><a href="https://blender.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who use Blender to create 3D graphics, animations, or games">Blender</a></li>
+                <li class="-item"><a href="https://networkengineering.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="network engineers">Network Engineering</a></li>
+                <li class="-item"><a href="https://crypto.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                <li class="-item"><a href="https://codereview.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="peer programmer code reviews">Code Review</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://magento.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of the Magento e-Commerce platform">Magento</a></li>
+                <li class="-item"><a href="https://softwarerecs.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people seeking specific software recommendations">Software Recommendations</a></li>
+                <li class="-item"><a href="https://dsp.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                <li class="-item"><a href="https://emacs.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those using, extending or developing Emacs">Emacs</a></li>
+                <li class="-item"><a href="https://raspberrypi.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                <li class="-item"><a href="https://ru.stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="программистов">Stack Overflow на русском</a></li>
+                <li class="-item"><a href="https://codegolf.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://es.stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programadores y profesionales de la inform&#225;tica">Stack Overflow en espa&#241;ol</a></li>
+                <li class="-item"><a href="https://ethereum.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Ethereum, the decentralized application platform and smart contract enabled blockchain">Ethereum</a></li>
+                <li class="-item"><a href="https://datascience.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Data science professionals, Machine Learning specialists, and those interested in learning more about the field">Data Science</a></li>
+                <li class="-item"><a href="https://arduino.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="developers of open-source hardware and software that is compatible with Arduino">Arduino</a></li>
+                <li class="-item"><a href="https://bitcoin.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Bitcoin crypto-currency enthusiasts">Bitcoin</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#technology" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (26)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Life / Arts">
+        <ul class="-list">
+                <li class="-item"><a href="https://photo.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                <li class="-item"><a href="https://scifi.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                <li class="-item"><a href="https://graphicdesign.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                <li class="-item"><a href="https://movies.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                <li class="-item"><a href="https://music.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                <li class="-item"><a href="https://worldbuilding.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="writers/artists using science, geography and culture to construct imaginary worlds and settings">Worldbuilding</a></li>
+                <li class="-item"><a href="https://cooking.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Life / Arts"><ul class="-list">
+                <li class="-item"><a href="https://diy.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="contractors and serious DIYers">Home Improvement</a></li>
+                <li class="-item"><a href="https://money.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                <li class="-item"><a href="https://academia.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="academics and those enrolled in higher education">Academia</a></li>
+                <li class="-item"><a href="https://law.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="legal professionals, students, and others with experience or interest in law">Law</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#lifearts" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (16)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Culture / Recreation">
+        <ul class="-list">
+                <li class="-item"><a href="https://english.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                <li class="-item"><a href="https://skeptics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientific skepticism">Skeptics</a></li>
+                <li class="-item"><a href="https://judaism.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                <li class="-item"><a href="https://travel.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="road warriors and seasoned travelers">Travel</a></li>
+                <li class="-item"><a href="https://christianity.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                <li class="-item"><a href="https://ell.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="speakers of other languages learning English">English Language Learners</a></li>
+                <li class="-item"><a href="https://japanese.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://gaming.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                <li class="-item"><a href="https://bicycles.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                <li class="-item"><a href="https://rpg.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                <li class="-item"><a href="https://anime.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="anime and manga fans">Anime &amp; Manga</a></li>
+                <li class="-item"><a href="https://puzzling.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those who create, solve, and study puzzles">Puzzling</a></li>
+                <li class="-item"><a href="https://mechanics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#culturerecreation" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (32)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Science">
+        <ul class="-list">
+                <li class="-item"><a href="https://mathoverflow.net" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional mathematicians">MathOverflow</a></li>
+                <li class="-item"><a href="https://math.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                <li class="-item"><a href="https://stats.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                <li class="-item"><a href="https://cstheory.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                <li class="-item"><a href="https://physics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="active researchers, academics and students of physics">Physics</a></li>
+                <li class="-item"><a href="https://chemistry.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientists, academics, teachers and students">Chemistry</a></li>
+                <li class="-item"><a href="https://biology.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="biology researchers, academics, and students">Biology</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Science"><ul class="-list">
+                <li class="-item"><a href="https://cs.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                <li class="-item"><a href="https://philosophy.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#science" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (10)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Other">
+        <ul class="-list">
+                <li class="-item"><a href="https://meta.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                <li class="-item"><a href="https://stackapps.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                <li class="-item"><a href="https://api.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programmatic interaction with Stack Exchange sites">API</a></li>
+                <li class="-item"><a href="https://data.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="querying Stack Exchange data using SQL">Data</a></li>
+                <li class="-item"><a href="https://area51.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                    </ul>
+    </nav>
+                <div class="-copyright g-row jc-end">
+                    <div class="g-column jc-sp-between">
+                        <ul class="-list">
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link:4 })" href="https://stackoverflow.blog?blb=1">Blog</a></li>
+                            <li class="-item"><a href="https://www.facebook.com/officialstackoverflow/" class="-link">Facebook</a></li>
+                            <li class="-item"><a href="https://twitter.com/stackoverflow" class="-link">Twitter</a></li>
+                            <li class="-item"><a href="https://linkedin.com/company/stack-overflow" class="-link">LinkedIn</a></li>
+                        </ul>
+
+                        <div>
+                            <p>
+site design / logo &#169; 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license" class="-link">cc by-sa 3.0</a>
+                    with <a href="https://stackoverflow.blog/2009/06/25/attribution-required/" rel="license" class="-link">attribution required</a>.
+                                <span id="svnrev">rev&nbsp;2017.12.15.28180</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    </div>
+    </footer>
+
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled
+            <img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno">
+        </div>
+    </noscript>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('set', 'dimension2', '|firefox|google-chrome|http-post|');
+                ga('send', 'pageview');
+                    
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+
+    </script>
+        
+    
+    </body>
+</html>

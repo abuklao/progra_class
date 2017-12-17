@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/QAPage">
+
+<head>
+
+<title>How do I manually fire HTTP POST requests with Firefox or Chrome? - Stack Overflow</title>
+<link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+<link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+<link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+
+
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome)"/>
+<meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:domain" content="stackoverflow.com"/>
+<meta name="twitter:title" property="og:title" itemprop="title name" content="How do I manually fire HTTP POST requests with Firefox or Chrome?" />
+<meta name="twitter:description" property="og:description" itemprop="description" content="I want to test some URLs on a web application I&#39;m working on. For that I would like to manually create HTTP POST requests (meaning I can add whatever parameters I like).
+
+Is there any extension or " />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.sstatic.net/Js/stub.en.js?v=b8445a3966bb"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Sites/stackoverflow/all.css?v=733fd40b244b">
+
+<meta name="twitter:app:country" content="US" />
+<meta name="twitter:app:name:iphone" content="Stack Exchange iOS" />
+<meta name="twitter:app:id:iphone" content="871299723" />
+<meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" />
+<meta name="twitter:app:name:ipad" content="Stack Exchange iOS" />
+<meta name="twitter:app:id:ipad" content="871299723" />
+<meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome" />
+<meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+<meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/4797534/how-do-i-manually-fire-http-post-requests-with-firefox-or-chrome">
+<meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+<script>
+
+StackExchange.ready(function () {
+
+StackExchange.using("snippets", function () {
+StackExchange.snippets.initSnippetRenderer();
+});
+
+
+StackExchange.using("postValidation", function () {
+StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+});
+
+
+StackExchange.question.init({showAnswerHelp:true,totalCommentCount:7,shownCommentCount:5,highlightColor:'#F4A83D',backgroundC
