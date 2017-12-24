@@ -2,20 +2,28 @@
 import socket
 
 def filter(url):
+    #stort up sockets
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     port = 80
+
+    #get the host:
     splitters = url.strip().split('/')
-    host = splitters[2]
-    #host = socket.gethostbyname(host)
-    dire = '/'.join(splitters[3:])
-    print("This is your directory : "+dire)
+    if len(splitters) > 2:
+        host = splitters[2]
+        dire = '/'.join(splitters[3:])
+        print("This is your directory : "+dire)
+    else:
+        host = url
+    
+    #start connections
     print('your url is : '+url+'\nyour hostname is : '+host)
-    s.connect((host,80))
     stringo = "GET "+url+" HTTP/1.1\nHost: "+host+"\n\n"
+    s.connect((host,80))
     cmd = stringo.encode()
     s.sendall(cmd)
 
     totalnum = 0
+    #receive information in loops until there inothing more to receive 
     while True:
         data = s.recv(1024)
         if(len(data) < 1):
@@ -23,6 +31,7 @@ def filter(url):
             break
         stringos = data.decode();
         cnum = len(stringos)
+        #check for the number of chacters in the document and stop at 3000
         if totalnum <= 3000:
             if (totalnum+cnum) > 3000:
                 difference = 3000-totalnum
@@ -35,7 +44,8 @@ def filter(url):
 
 
 url = input("Please write down your url\n")
+#catch any exceptions that may occur
 try:
     filter(url)
 except Exception as e:
-    print("Could not download because : "+e)
+    print("Could not download because : "+str(e))

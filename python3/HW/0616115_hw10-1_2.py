@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 import urllib.request, urllib.error, urllib.parse
 
+#get hyour input
 url = input("Please type the desired url\n")
-file = urllib.request.urlopen(url)
+#try if it works or not
+try:
+    file = urllib.request.urlopen(url)
+except Exception as e:
+    print("Could not connect because : "+str(e))
+    quit()
 totalnum = 0
-
+#decode line by line countin th e number of chars at every line. when th enumber hits 3000 it will stop display the characters
 for line in file:
     line = line.decode()
     cnum = len(line)
